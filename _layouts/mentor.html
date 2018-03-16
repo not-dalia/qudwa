@@ -1,0 +1,60 @@
+---
+layout: default
+---
+
+<header class="site-header">
+    <h1 class="title">{{ page.name }}</h1>
+    <p class="subtitle">{% if page.jobtitle %}{{ page.jobtitle }}{% endif %}
+    {% if page.jobtitle and page.workplace %}, {% endif %}
+    {% if page.workplace %}{{ page.workplace }}{% endif %}</p>
+</header>
+<div class="wrapper">
+    {% if page.tags.size > 0 %} {% for tag in page.tags %} 
+        <a href="{{ site.baseurl }}/#{{ tag }}">{{ tag | capitalize }}</a>{% if forloop.last == false %}, 
+    {% endif %} {% endfor %}{% endif %}
+</div>
+<div class="wrapper">
+    <ul>
+        {{ page.longbio }}
+    </ul>
+    {% if page.education-experience %}
+        <ul>
+            {% for item in page.education-experience %} 
+            <li>
+            <div>{{ item.title }}</div>
+            <div>{{ item.description }}</div>
+            <div>{{ item.place | capitalize }}, {{ item.duration }}</div>
+            </li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+    {% if page.topics %}
+        <ul>
+            {% for item in page.topics %} 
+            <li>
+                {{item}}
+            </li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+    {% if page.interests %}
+        <ul>
+            {% for item in page.interests %} 
+            <li>
+                {{item}}
+            </li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+</div>
+
+<div class="wrapper">
+        {% for item in site.mentor_posts %}
+            {% if item.mentor == page.name %}
+            <div>
+                <h2>{{ item.title }}</h2>
+                {{ item.content | markdownify }}
+            </div>
+            {% endif %}
+        {% endfor %}
+</div>
