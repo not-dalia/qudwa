@@ -4,8 +4,7 @@ layout: default
 
 <header class="site-header">
     <h1 class="title">{{ page.name }}</h1>
-    <p class="subtitle">{% if page.jobtitle %}{{ page.jobtitle }}{% endif %}
-    {% if page.jobtitle and page.workplace %}, {% endif %}
+    <p class="subtitle">{% if page.jobtitle %}{{ page.jobtitle }}{% endif %}{% if page.jobtitle and page.workplace %}, {% endif %}
     {% if page.workplace %}{{ page.workplace }}{% endif %}</p>
 </header>
 <div class="wrapper">
