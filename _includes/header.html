@@ -1,0 +1,19 @@
+<header>
+<div class='languages' current-page="{{page.ref}}">
+    <ul>
+        {% assign mentors=site.mentors | where:"ref", page.ref | sort: 'lang' %}
+        {% for mentor in mentors %}
+          <li>
+            <a class="{{ mentor.lang }}" onclick="javascript:languageSelect('{{ mentor.url | prepend: site.baseurl }}', '{{mentor.lang}}');">{{ mentor.lang }}</a>
+          </li>
+        {% endfor %}
+        
+        {% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
+        {% for page in pages %}
+          <li>
+            <a class="{{ page.lang }}" onclick="javascript:languageSelect('{{ page.url | prepend: site.baseurl }}', '{{page.lang}}');">{{ page.lang }}</a>
+          </li>
+        {% endfor %}
+        </ul>
+</div>
+</header>
