@@ -1,6 +1,7 @@
 ---
 ref: "another_mentor"
 lang: ar
+categories: ar
 name: "مدربة اخرى"
 jobtitle: "بدون عمل"
 tags: ["لا شيء"]

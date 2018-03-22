@@ -1,6 +1,7 @@
 ---
 ref: "test_mentor"
 lang: ar
+categories: ar
 name: "مدربة تجربة"
 jobtitle: "الوظيفة الحالية"
 tags: ["تكنولوجيا حياتية","بحث علمي","علوم طبية","علوم"]

@@ -1,6 +1,7 @@
 ---
 ref: "test_mentor"
 lang: en
+categories: en
 name: "Test Mentor"
 jobtitle: "current title"
 workplace: "current workplace"

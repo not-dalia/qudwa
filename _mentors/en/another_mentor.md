@@ -1,6 +1,7 @@
 ---
 ref: "another_mentor"
 lang: en
+categories: en
 name: "Another Mentor"
 jobtitle: Unemployed
 tags: [Nothing]

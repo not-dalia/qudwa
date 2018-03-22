@@ -39,7 +39,7 @@ plugins:
 collections:
   mentors:
     output: true
-    permalink: /:name
+    permalink: /:categories/:name
   mentor_posts:
     output: false
 
