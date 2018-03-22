@@ -43,6 +43,16 @@ collections:
   mentor_posts:
     output: false
 
+languages:
+  - name: 'English'
+    key: 'en'
+  - name: 'Español'
+    key: 'es'
+
+# Prose settings
+prose:
+  rooturl: '_posts'
+
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
