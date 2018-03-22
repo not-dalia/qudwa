@@ -52,9 +52,27 @@ languages:
 # Prose settings
 prose:
   ignore:
-    - /* # Ignore everything
-    - !/_posts # Include posts
-    - !/_includes # Include includes
+    - _data
+    - _includes
+    - _layouts
+    - _posts
+    - _sass
+    - _site
+    - _ar
+    - _assets
+    - _en
+    - js
+    - _congif.yml
+    - 404.html
+    - about.md
+    - Gemfile
+    - Gemfile.lock
+    - index.html
+    - LICENSE.txt
+    - mentors.ar.js
+    - mentors.en.js
+    - README.md
+
   #rooturl: '_mentors'
 
 # Exclude from processing.
