@@ -59,9 +59,9 @@ prose:
     - _posts
     - _sass
     - _site
-    - ar
+    #- ar
     - _assets
-    - en
+    #- en
     - js
     - _config.yml
     - 404.html
