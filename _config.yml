@@ -74,6 +74,14 @@ prose:
     - mentors.ar.js
     - mentors.en.js
     - README.md
+  metadata:
+    _mentors:
+      - name: "ref"
+        field:
+          element: "text"
+          value: "blog"
+          label: Reference
+
 
   #rooturl: '_mentors'
 
