@@ -51,7 +51,11 @@ languages:
 
 # Prose settings
 prose:
-  rooturl: '_posts'
+  ignore:
+    - /* # Ignore everything
+    - !/_posts # Include posts
+    - !/_includes # Include includes
+  #rooturl: '_mentors'
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
