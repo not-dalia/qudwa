@@ -52,21 +52,23 @@ languages:
 # Prose settings
 prose:
   ignore:
+    - .vscode
     - _data
     - _includes
     - _layouts
     - _posts
     - _sass
     - _site
-    - _ar
+    - ar
     - _assets
-    - _en
+    - en
     - js
-    - _congif.yml
+    - _config.yml
     - 404.html
     - about.md
     - Gemfile
     - Gemfile.lock
+    - .gitignore
     - index.html
     - LICENSE.txt
     - mentors.ar.js
