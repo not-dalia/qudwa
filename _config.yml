@@ -80,15 +80,29 @@ prose:
         field:
           element: "text"
           label: Reference
+    _mentors/ar:
       - name: "lang"
         field:
           element: "select"
           label: Language
+          value: "ar"
           options: 
             - name: English
               value: "en"
-            - name: Arbic
+            - name: Arabic
               value: "ar"
+    _mentors/en:
+      - name: "lang"
+        field:
+          element: "select"
+          label: Language
+          value: "en"
+          options: 
+            - name: English
+              value: "en"
+            - name: Arabic
+              value: "ar"
+    
 
 
   #rooturl: '_mentors'
