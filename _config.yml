@@ -46,8 +46,8 @@ collections:
 languages:
   - name: 'English'
     key: 'en'
-  - name: 'Español'
-    key: 'es'
+  - name: 'Arabic'
+    key: 'ar'
 
 # Prose settings
 prose:
@@ -79,8 +79,16 @@ prose:
       - name: "ref"
         field:
           element: "text"
-          value: "blog"
           label: Reference
+      - name: "lang"
+        field:
+          element: "select"
+          label: Language
+          options: 
+            - name: English
+              value: "en"
+            - name: Arbic
+              value: "ar"
 
 
   #rooturl: '_mentors'
