@@ -80,7 +80,7 @@ prose:
         field:
           element: "text"
           label: Reference
-    _mentors/ar:
+    _mentors/arabic:
       - name: "lang"
         field:
           element: "select"
@@ -91,7 +91,7 @@ prose:
               value: "en"
             - name: Arabic
               value: "ar"
-    _mentors/en:
+    _mentors/english:
       - name: "lang"
         field:
           element: "select"
