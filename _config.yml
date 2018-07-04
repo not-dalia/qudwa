@@ -75,12 +75,11 @@ prose:
     - mentors.en.js
     - README.md
   metadata:
-    _mentors:
+    _mentors/arabic:
       - name: "ref"
         field:
           element: "text"
           label: Reference
-    _mentors/arabic:
       - name: "lang"
         field:
           element: "select"
@@ -91,7 +90,15 @@ prose:
               value: "en"
             - name: Arabic
               value: "ar"
+      - name: "topics"
+        field:
+          element: "multiselect"
+          label: topics
     _mentors/english:
+      - name: "ref"
+        field:
+          element: "text"
+          label: Reference
       - name: "lang"
         field:
           element: "select"
@@ -102,6 +109,10 @@ prose:
               value: "en"
             - name: Arabic
               value: "ar"
+      - name: "topics"
+        field:
+          element: "multiselect"
+          label: topics
     
 
 
