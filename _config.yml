@@ -80,16 +80,27 @@ prose:
         field:
           element: "text"
           label: Reference
+      - name: "name"
+        field:
+          element: "text"
+          label: Name
+      - name: "tags"
+        field:
+          element: "multiselect"
+          label: Tags
+          alterable: true
+      - name: "shortbio"
+        field:
+          element: "textarea"
+          label: Short Bio
+      - name: "longbio"
+        field:
+          element: "textarea"
+          label: Long Bio
       - name: "lang"
         field:
-          element: "select"
-          label: Language
+          element: "hidden"
           value: "ar"
-          options: 
-            - name: English
-              value: "en"
-            - name: Arabic
-              value: "ar"
       - name: "topics"
         field:
           element: "multiselect"
@@ -100,16 +111,27 @@ prose:
         field:
           element: "text"
           label: Reference
+      - name: "name"
+        field:
+          element: "text"
+          label: Name
+      - name: "tags"
+        field:
+          element: "multiselect"
+          label: Tags
+          alterable: true
+      - name: "shortbio"
+        field:
+          element: "textarea"
+          label: Short Bio
+      - name: "longbio"
+        field:
+          element: "textarea"
+          label: Long Bio
       - name: "lang"
         field:
-          element: "select"
-          label: Language
+          element: "hidden"
           value: "en"
-          options: 
-            - name: English
-              value: "en"
-            - name: Arabic
-              value: "ar"
       - name: "topics"
         field:
           element: "multiselect"
