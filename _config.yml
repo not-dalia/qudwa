@@ -93,7 +93,8 @@ prose:
       - name: "topics"
         field:
           element: "multiselect"
-          label: topics
+          label: Topics
+          alterable: true
     _mentors/english:
       - name: "ref"
         field:
@@ -112,7 +113,8 @@ prose:
       - name: "topics"
         field:
           element: "multiselect"
-          label: topics
+          label: Topics
+          alterable: true
     
 
 
