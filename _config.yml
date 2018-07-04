@@ -101,6 +101,10 @@ prose:
         field:
           element: "hidden"
           value: "ar"
+      - name: "categories"
+        field:
+          element: "hidden"
+          value: "ar"
       - name: "topics"
         field:
           element: "multiselect"
@@ -129,6 +133,10 @@ prose:
           element: "textarea"
           label: Long Bio
       - name: "lang"
+        field:
+          element: "hidden"
+          value: "en"
+      - name: "categories"
         field:
           element: "hidden"
           value: "en"
