@@ -24,6 +24,6 @@ interests:
   - Something
   - Something else
 social-accounts:
-  website: 'http://example.com'
+  link: 'http://example.com'
 published: true
 ---

@@ -4,6 +4,7 @@ lang: ar
 categories: ar
 name: مدربة تجربة
 jobtitle: الوظيفة الحالية
+workplace: مكان العمل الحالي
 tags:
   - تكنولوجيا حياتية
   - بحث علمي

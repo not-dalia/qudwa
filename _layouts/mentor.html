@@ -1,8 +1,125 @@
 ---
 layout: default
 ---
+  <div class="mentor-pages" id="main" {% if page.lang=="ar" %}dir="rtl" {% endif %} data-selected-language="{{ page.lang }}" >
 
-<header class="site-header">
+    <div class="shadow sh-1"></div>
+    <div class="mentor-container">
+      <div id="background-line"></div>
+      <div class="mentor-section">
+        <div class="mentor-card-big sh-2">
+          <div class="mentor-main">
+            <div class="mentor-image"></div>
+            <div class="mentor-info">
+              <div class="mentor-name">{{ page.name }}</div>
+              <div class="mentor-title">{% if page.jobtitle %}{{ page.jobtitle }}{% endif %}{% if page.jobtitle and page.workplace %}, {% endif %}{% if page.workplace %}{{ page.workplace }}{% endif %}</div>
+              <div class="mentor-connect-dropdown sh-0 hv">
+                <div class="button-title"> {{ site.data.t.connect_with[page.lang] }} {{ page.name }}</div>
+                <div class="button-content sh-1">
+                  <div class="button-content-row"><a href="#"> {{ site.data.t.request_intro[page.lang] }}</a>
+                    <div class="button-content-help" data-help="{{ site.data.t.request_intro_help[page.lang] }}"> <i class="fas fa-question-circle"></i>
+                      <div class="arrow {% if page.lang=="ar" %} arrow-right {% else %}  arrow-left {% endif %}"></div>
+                    </div>
+                  </div>
+                  <div class="button-content-row"><a href="#"> {{ site.data.t.request_meeting[page.lang] }}</a>
+                    <div class="button-content-help" data-help="{{ site.data.t.request_meeting_help[page.lang] }}."> <i class="fas fa-question-circle"></i>
+                      <div class="arrow {% if page.lang=="ar" %} arrow-right {% else %}  arrow-left {% endif %}"></div>
+                    </div>
+                  </div>
+                  <div class="button-content-row"><a href="#"> {{ site.data.t.join_whatsapp[page.lang] }}</a>
+                    <div class="button-content-help" data-help="{{ site.data.t.join_whatsapp_help[page.lang] }}"> <i class="fas fa-question-circle"></i>
+                      <div class="arrow {% if page.lang=="ar" %} arrow-right {% else %}  arrow-left {% endif %}"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mentor-details">
+          {% assign indexPage=site.pages | where:"lang", page.lang | where: "ref", "index" %}
+            {% if page.tags.size > 0 %} 
+                <div class="tags-row">
+                    {% for tag in page.tags %} 
+                        <a href="{{ site.baseurl }}{{ indexPage.first.url }}#{{ tag }}">{{ tag | capitalize }}</a> {% endfor %}
+                </div>
+            {% endif %}
+            <div class="long-bio-row">        
+              {{ page.longbio }}
+            </div>
+            {% if page.education-experience %}
+            <div class="details-row" id="education">
+              <div class="icon"> <i class="fas fa-graduation-cap"></i></div>
+              <div class="title">{{ site.data.t.education_experience[page.lang] }}</div>
+              {% for item in page.education-experience %} 
+                <div class="education-row">
+                  <div class="details"> <span class="edu-title">{{ item.title }}{% if page.lang=="ar" %}، {% else %}, {% endif %}  </span><span class="description">{{ item.description }}</span></div>
+                  <div class="details"><span class="place">{{ item.place | capitalize }}{% if page.lang=="ar" %}، {% else %}, {% endif %}  </span><span class="duration">{{ item.duration }}</span></div>
+                </div>
+              {% endfor %}
+            </div>
+            {% endif %}
+
+            {% if page.topics %}
+              <div class="details-row" id="topics">
+                <div class="icon"> <i class="fas fa-bookmark"></i></div>
+                <div class="title">{{ site.data.t.topics_i_can_help_with[page.lang] }}</div>
+                <div class="row">
+                  {% for item in page.topics %} {{item}}{% if page.lang=="ar" %}، {% else %}, {% endif %} {% endfor %}
+                </div>
+              </div>
+            {% endif %}
+
+            {% if page.interests %}
+              <div class="details-row" id="interests">
+                  <div class="icon"> <i class="fas fa-heart"></i></div>
+                  <div class="title">{{ site.data.t.interests[page.lang] }}</div>
+                <div class="row">
+                  {% for item in page.interests %} {{item}}{% if page.lang=="ar" %}، {% else %}, {% endif %}  {% endfor %}
+                </div>
+              </div>
+            {% endif %}
+
+            {% if page['social-accounts'] %}
+            <div class="social-media-row">
+              {% if page['social-accounts'].facebook %}
+                <a target="_blank" href="{{ page['social-accounts'].facebook }}"> <i class="fab fa-facebook-square"></i></a>
+              {% endif %}
+              {% if page['social-accounts'].instagram %}
+                <a target="_blank" href="{{ page['social-accounts'].instagram }}"> <i class="fab fa-instagram"></i></a>
+              {% endif %}
+              {% if page['social-accounts'].twitter %}
+                <a  target="_blank" href="{{ page['social-accounts'].twitter }}"> <i class="fab fa-twitter-square"></i></a>
+              {% endif %}
+              {% if page['social-accounts'].link %}
+                <a  target="_blank" href="{{ page['social-accounts'].link }}"> <i class="fas fa-link"></i></a>
+              {% endif %}              
+          
+          </div>
+            {% endif %}
+
+           
+          </div>
+        </div>
+      </div>
+      {% for item in site.mentor_posts %}
+        {% if item.ref == page.ref and item.lang == page.lang %}
+          <div class="mentor-section">
+            <div class="mentor-card-big sh-2">
+              <div class="post-type"> <i class="fas fa-newspaper"></i><span>{{ site.data.t.recommendations[page.lang] }} {{ page.name }}</span></div>
+              <div class="mentor-post-container">
+                <div class="post-title">{{ item.title }}</div>
+                <div class="post-content">{{ item.content | markdownify }}   </div>
+              </div>
+            </div>
+          </div>
+        {% endif %}
+      {% endfor %}
+      
+    </div>
+</div>
+
+
+{% comment %} <header class="site-header">
     <h1 class="title">{{ page.name }}</h1>
     <p class="subtitle">{% if page.jobtitle %}{{ page.jobtitle }}{% endif %}{% if page.jobtitle and page.workplace %}, {% endif %}
     {% if page.workplace %}{{ page.workplace }}{% endif %}</p>
@@ -57,4 +174,4 @@ layout: default
             </div>
             {% endif %}
         {% endfor %}
-</div>
+</div> {% endcomment %}

@@ -1,13 +1,17 @@
-<html>
+<html lang="{{ page.lang }}" {% if page.lang=="ar" %}dir="rtl" {% endif %}>
 {% include head.html %}
 
 <body>
-    {% include header.html %}
+    <div class="container">
 
-    <div {% if page.lang=="ar" %}dir="rtl" {% endif %}>
-        {{ content }}
+        {% include header.html %}
+
+            {{ content }}
+
+
+        {% include footer.html %}
     </div>
+    <script src="{{ site.baseurl }}/js/{{ page.lang }}/index.js"></script>
 
-    {% include footer.html %}
 </body>
 </html>

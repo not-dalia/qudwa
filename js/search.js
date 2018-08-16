@@ -21,62 +21,141 @@ let idx = lunr(function () {
 
 
 function displaySearchResults(results, store) {
-    let searchResults = document.getElementById('search-results');
+    let searchResults = $('#mentor-list');
+    searchResults.empty();
+
+
 
     if (results.length) { // Are there any results?
         let appendString = '';
+        $('#search-tags').empty();
 
         for (let i = 0; i < results.length; i++) {  // Iterate over the results
             let item = store[results[i].ref];
-            /*appendString += '<li><a href="' + item.url + '"><h3>' + item.title + '</h3></a>';
-            appendString += '<p>' + item.excerpt.substring(0, 150) + '...</p></li>'; */
-            let li = document.createElement("li");
-            let header = document.createElement("h2");
-            header.innerHTML = '<a href="'+ item.url + '">' + item.title + '</a>';
-            let content = '<section class="post-excerpt" itemprop="description"><p>' + item.shortBio + '</p></section>';
-            content += '<section class="post-meta">';
-            content += '<div class="post-categories">';
+
+
+            let card = $('<div />', { "class": "mentor-card" });
+
+            let cardShadow = $('<div />', { "class": "mentor-content sh-2 hv" });
+            let cardImage = $('<div />', { "class": "mentor-image" });
+            let cardInfo = $('<div />', { "class": "mentor-info" });
+
+            let cardInfoName = $('<div />', { "class": "mentor-name" });
+            let cardInfoNameLink = $('<a />', { text: item.title, href: item.url });
+            cardInfoName.append(cardInfoNameLink);
+            
+            let jobTitle = '';
+            if (item.jobtitle) jobTitle += item.jobtitle;
+            if (item.workplace) {
+                if (item.jobtitle) jobTitle += ($('#main').attr('data-selected-language') == 'ar' ? '، ' : ', ');
+                jobTitle += item.workplace;
+            }
+            let cardInfoJobTitle = $('<div />', { "class": "mentor-title", text: jobTitle });
+            let cardInfoBio = $('<div />', { "class": "mentor-bio", text: item.shortBio });
+
+            let cardInfoTags = $('<ul />', { "class": "mentor-tags" });
+
             let tags = item.tags.split(',');
             tags.forEach((el, i) => {
-                content += '<a href="#'+ el +'">' + el + '</a>'
-                if (i != tags.length) content += ' ';
+                if (i < 2) cardInfoTags.append('<li>' + '<a onclick="javascript:addTag(\'' + el.trim() + '\')">' + el.trim() + '</a>' + '</li>');
+                $('#search-tags').append('<li>' + '<a onclick="javascript:toggleTag(\'' + el.trim() + '\')">' + el.trim() + '</a>' + '</li>');
             });
-            content += '</div></section>';
 
-            li.innerHTML = header.outerHTML + content;
-            appendString += li.outerHTML;
+            let cardInfoSocial = $('<ul />', { "class": "mentor-social" });
+
+            for (var key in item['social-accounts']) {
+                // skip loop if the property is from prototype
+                if (!item['social-accounts'].hasOwnProperty(key) || key == 'nothing') continue;
+
+                var obj = item['social-accounts'][key];
+                if (key == 'link')
+                    cardInfoSocial.append('<li>' + '<a target="_blank" href="' + obj.trim() + '">' + '<i class="fas fa-link"></i>' + '</a>' + '</li>');
+                else
+                    cardInfoSocial.append('<li>' + '<a target="_blank" href="' + obj.trim() + '">' + '<i class="fab fa-' + key + '"></i>' + '</a>' + '</li>');
+            }
+
+            cardInfo.append(cardInfoName);
+            cardInfo.append(cardInfoJobTitle);
+            cardInfo.append(cardInfoBio);
+            cardInfo.append(cardInfoTags);
+            cardInfo.append(cardInfoSocial);
+
+            cardShadow.append(cardImage);
+            cardShadow.append(cardInfo);
+
+            card.append(cardShadow);
+
+            searchResults.append(card);
         }
 
-        searchResults.innerHTML = appendString;
     } else {
-        searchResults.innerHTML = '<li>No results found</li>';
+        searchResults.html('No results found');
     }
 }
 
-function displayAll(store){
-    let searchResults = document.getElementById('search-results');
+function displayAll(store) {
+    console.log(store);
+    let searchResults = $('#mentor-list');
+    searchResults.empty();
     let appendString = '';
+    $('#search-tags').empty();
 
     for (let i = 0; i < store.length; i++) {  // Iterate over the results
         let item = store[i];
-        let li = document.createElement("li");
-            let header = document.createElement("h2");
-            header.innerHTML = '<a href="'+ item.url + '">' + item.title + '</a>';
-            let content  = '<section class="post-excerpt" itemprop="description"><p>' + item.shortBio + '</p></section>';
-            content += '<section class="post-meta">';
-            content += '<div class="post-categories">';
-            let tags = item.tags.split(',');
-            tags.forEach((el, i) => {
-                content += '<a href="#'+ el +'">' + el + '</a>'
-                if (i != tags.length) content += ' ';
-            });
-            content += '</div></section>';
+        let card = $('<div />', { "class": "mentor-card" });
 
-            li.innerHTML = header.outerHTML + content;
-            appendString += li.outerHTML;
-            
+        let cardShadow = $('<div />', { "class": "mentor-content sh-2 hv" });
+        let cardImage = $('<div />', { "class": "mentor-image" });
+        let cardInfo = $('<div />', { "class": "mentor-info" });
+
+        let cardInfoName = $('<div />', { "class": "mentor-name" });
+        let cardInfoNameLink = $('<a />', { text: item.title, href: item.url });
+        cardInfoName.append(cardInfoNameLink);
+
+        let jobTitle = '';
+        if (item.jobtitle) jobTitle += item.jobtitle;
+        if (item.workplace) {
+            if (item.jobtitle) jobTitle += ($('#main').attr('data-selected-language') == 'ar' ? '، ' : ', ');
+            jobTitle += item.workplace;
+        }
+        let cardInfoJobTitle = $('<div />', { "class": "mentor-title", text: jobTitle });
+        let cardInfoBio = $('<div />', { "class": "mentor-bio", text: item.shortBio });
+
+        let cardInfoTags = $('<ul />', { "class": "mentor-tags" });
+
+        let tags = item.tags.split(',');
+        tags.forEach((el, i) => {
+            if (i < 2) cardInfoTags.append('<li>' + '<a onclick="javascript:addTag(\'' + el.trim() + '\')">' + el.trim() + '</a>' + '</li>');
+            $('#search-tags').append('<li>' + '<a onclick="javascript:toggleTag(\'' + el.trim() + '\')">' + el.trim() + '</a>' + '</li>');
+        });
+
+
+        let cardInfoSocial = $('<ul />', { "class": "mentor-social" });
+
+        for (var key in item['social-accounts']) {
+            // skip loop if the property is from prototype
+            if (!item['social-accounts'].hasOwnProperty(key) || key == 'nothing') continue;
+
+            var obj = item['social-accounts'][key];
+            if (key == 'link')
+                cardInfoSocial.append('<li>' + '<a target="_blank" href="' + obj.trim() + '">' + '<i class="fas fa-link"></i>' + '</a>' + '</li>');
+            else
+                cardInfoSocial.append('<li>' + '<a target="_blank" href="' + obj.trim() + '">' + '<i class="fab fa-' + key + '"></i>' + '</a>' + '</li>');
+        }
+
+        cardInfo.append(cardInfoName);
+        cardInfo.append(cardInfoJobTitle);
+        cardInfo.append(cardInfoBio);
+        cardInfo.append(cardInfoTags);
+        cardInfo.append(cardInfoSocial);
+
+        cardShadow.append(cardImage);
+        cardShadow.append(cardInfo);
+
+        card.append(cardShadow);
+
+        searchResults.append(card);
     }
-    searchResults.innerHTML = appendString;
 }
 
 function getQueryVariable() {
@@ -92,18 +171,18 @@ function getQueryVariable() {
             query[currentQuery[0]] = currentQuery[1];
     });
 
-    if (query.tags) 
+    if (query.tags)
         query.tags = query.tags.split(',');
     return query;
 }
 
-function generateHashString(query){
+function generateHashString(query) {
     let hashString = '#';
     if (query.search && query.search.trim() != '')
         hashString += 'search:' + query.search.trim() + ';';
 
     if (query.tags && query.tags.length > 0)
-        hashString =+ 'tags:' + query.tags.join(',') + ';';
+        hashString += 'tags:' + query.tags.join(',') + ';';
 
     return hashString;
 }
@@ -112,12 +191,38 @@ function search(query) {
     if (query.search && query.search.trim() != '') {
         let searchTerm = query.search.trim();
         document.getElementById('search-box').setAttribute("value", searchTerm);
-        
-        
-        let results = idx.search(searchTerm); 
+
+        let unfilteredResults = idx.search(searchTerm);
+        let results = unfilteredResults;
+        if (query.tags && query.tags.length > 0) {
+            let results = unfilteredResults.filter((el) => {
+                let item = mentors[el.ref];
+                let tagFound = false;
+                item.tags.split(',').forEach((el, i) => {
+                    if (query.tags.indexOf(el) >= 0) {
+                        tagFound = true;
+                    }
+                });
+
+                return tagFound
+            });
+        }
         displaySearchResults(results, mentors);
     } else {
-        displayAll(mentors);
+        let results = mentors;
+        if (query.tags && query.tags.length > 0) {
+            let results = mentors.filter((item) => {
+                let tagFound = false;
+                item.tags.split(',').forEach((el, i) => {
+                    if (query.tags.indexOf(el) >= 0) {
+                        tagFound = true;
+                    }
+                });
+
+                return tagFound
+            });
+        }
+        displayAll(results);
     }
 };
 
@@ -128,6 +233,28 @@ function onSearchButton() {
     window.location.hash = generateHashString(query);
     search(getQueryVariable());
 }
+
+function toggleTag(tag) {
+    let query = getQueryVariable();
+    if (!query.tags) query.tags = []
+    if (query.tags && query.tags.indexOf(tag) >= 0) query.tags.splice(query.tags.indexOf(tag), 1);
+    else query.tags.push(tag);
+    window.location.hash = generateHashString(query);
+    onSearchButton();
+}
+
+function addTag(tag) {
+    let query = getQueryVariable();
+    if (!query.tags) query.tags = [];
+    if (query.tags.indexOf(tag) < 0) query.tags.push(tag);
+    window.location.hash = generateHashString(query);
+}
+
+$('#search-box').keypress(function (event) {
+    if (event.keyCode == 13) {
+        $('#search-button').click();
+    }
+});
 
 
 search(getQueryVariable());

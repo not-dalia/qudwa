@@ -15,5 +15,5 @@ education-experience:
 topics: موضوع
 interests: [موضوع, "موضوع اخر"]
 social-accounts:
-  website: http://example.com
+  link: http://example.com
 ---

@@ -2,5 +2,56 @@ title:
   en: "My Mentor"
   ar: "مدربتي"
 search:
-  en: Search
-  ar: بحث
+  en: "Search here..."
+  ar: "إبحث هنا..."
+qudwa:
+  en: "Qudwa"
+  ar: "قدوة"
+language:
+  en: "English"
+  ar: "العربية"
+looking_for:
+  en: "What are you looking for?"
+  ar: "ما الذي تبحثين عنه؟"
+education_experience:
+  en: "Education and Experience"
+  ar: التعليم و الخبرة العملية
+topics_i_can_help_with:
+  en: "Topics I can help with"
+  ar: "مواضيع أستطيع مساعدتك فيها"
+interests:
+  en: "Personal interests"
+  ar: "اهتمامات شخصية"
+connect_with:
+  en: "Connect with"
+  ar: "تواصلي مع"
+request_intro:
+  en: "Request an introduction on social networks"
+  ar: "طلب تعريف على وسائل التواصل الاجتماعي"
+request_meeting:
+  en: "Request an online meeting"
+  ar: "طلب لقاء الكتروني"
+join_whatsapp:
+  en: "Join a whatsapp group"
+  ar: "الانضمام لمجموعة واتساب"
+request_intro_help:
+  en: "If would like to contact the mentor through one of the social networking platforms available on her page but you need us to introduce you to her, then fill the form and we will help with that."
+  ar: "هل تودين التواصل مع القدوة عن طريق إحدى شبكات التواصل الاجتماعي المتوفرة على صفحتها، يمكنك ملئ النموذج و سنساعدك بالتواصل معها و التعريف بك."
+request_meeting_help:
+  en: "You can contact the mentor through a video call or audio call. Fill the form and we will contact you with available dates and times."
+  ar: "اذا رغبتِ بالتحدث مع القدوة عن طريق الاتصال المرئي او الصوتي يمكنك ملئ النموذج و سنتواصل معك بالتواريخ و الأوقات المتاحة."
+join_whatsapp_help:
+  en: "Join the Whatsapp group lead by the mentor and get into discussion with others who seek advice and guidance."
+  ar: "انضمي لمجموعة الواتساب بقيادة القدوة مع غيرك مِن الباحثات عن النصيحة و التوجيه."
+recommendations:
+  en: "Recommendations by"
+  ar: "توصيات من قبل"
+could_not_find_help:
+  en: "Couldn’t find what you are looking for?"
+  ar: "ما زلت بحاجة لمساعدة؟"
+let_us_help:
+  en: "Let us help"
+  ar: "دعينا نساعدك"
+recommend_mentor:
+  en: "Recommend a mentor"
+  ar: "ترشيح قدوة"
