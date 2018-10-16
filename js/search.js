@@ -43,7 +43,7 @@ function displaySearchResults(results, store) {
             let cardInfoName = $('<div />', { "class": "mentor-name" });
             let cardInfoNameLink = $('<a />', { text: item.title, href: item.url });
             cardInfoName.append(cardInfoNameLink);
-            
+
             let jobTitle = '';
             if (item.jobtitle) jobTitle += item.jobtitle;
             if (item.workplace) {
@@ -56,7 +56,7 @@ function displaySearchResults(results, store) {
             let cardInfoTags = $('<ul />', { "class": "mentor-tags" });
 
             let tags = item.tags.split(',');
-            tags.forEach((el, i) => {
+            tags.forEach(function(el, i) {
                 if (i < 2) cardInfoTags.append('<li>' + '<a onclick="javascript:addTag(\'' + el.trim() + '\')">' + el.trim() + '</a>' + '</li>');
                 $('#search-tags').append('<li>' + '<a onclick="javascript:toggleTag(\'' + el.trim() + '\')">' + el.trim() + '</a>' + '</li>');
             });
@@ -124,7 +124,7 @@ function displayAll(store) {
         let cardInfoTags = $('<ul />', { "class": "mentor-tags" });
 
         let tags = item.tags.split(',');
-        tags.forEach((el, i) => {
+        tags.forEach(function(el, i){
             if (i < 2) cardInfoTags.append('<li>' + '<a onclick="javascript:addTag(\'' + el.trim() + '\')">' + el.trim() + '</a>' + '</li>');
             $('#search-tags').append('<li>' + '<a onclick="javascript:toggleTag(\'' + el.trim() + '\')">' + el.trim() + '</a>' + '</li>');
         });
@@ -165,7 +165,7 @@ function getQueryVariable() {
         search: null,
         tags: null,
     };
-    values.forEach(el => {
+    values.forEach(function(el){
         let currentQuery = el.split(':');
         if (currentQuery.length == 2)
             query[currentQuery[0]] = currentQuery[1];
@@ -176,17 +176,6 @@ function getQueryVariable() {
     return query;
 }
 
-function generateHashString(query) {
-    let hashString = '#';
-    if (query.search && query.search.trim() != '')
-        hashString += 'search:' + query.search.trim() + ';';
-
-    if (query.tags && query.tags.length > 0)
-        hashString += 'tags:' + query.tags.join(',') + ';';
-
-    return hashString;
-}
-
 function search(query) {
     if (query.search && query.search.trim() != '') {
         let searchTerm = query.search.trim();
@@ -195,12 +184,13 @@ function search(query) {
         let unfilteredResults = idx.search(searchTerm);
         let results = unfilteredResults;
         if (query.tags && query.tags.length > 0) {
-            let results = unfilteredResults.filter((el) => {
+            results = unfilteredResults.filter(function(el){
                 let item = mentors[el.ref];
-                let tagFound = false;
-                item.tags.split(',').forEach((el, i) => {
-                    if (query.tags.indexOf(el) >= 0) {
-                        tagFound = true;
+                let tagFound = true;
+                let itemTags = item.tags.split(', ');
+                query.tags.forEach(function(el, i){
+                    if (itemTags.indexOf(el.trim()) < 0) {
+                        tagFound = false;
                     }
                 });
 
@@ -211,11 +201,12 @@ function search(query) {
     } else {
         let results = mentors;
         if (query.tags && query.tags.length > 0) {
-            let results = mentors.filter((item) => {
-                let tagFound = false;
-                item.tags.split(',').forEach((el, i) => {
-                    if (query.tags.indexOf(el) >= 0) {
-                        tagFound = true;
+            results = mentors.filter(function(item){
+                let tagFound = true;
+                let itemTags = item.tags.split(', ');
+                query.tags.forEach(function(el, i) {
+                    if (itemTags.indexOf(el.trim()) < 0) {
+                        tagFound = false;
                     }
                 });
 
@@ -230,7 +221,8 @@ function onSearchButton() {
     let searchTerm = document.getElementsByName("query")[0].value;
     let query = getQueryVariable();
     query.search = encodeURIComponent(searchTerm.trim());
-    window.location.hash = generateHashString(query);
+    //window.location.hash = generateHashString(query);
+    window.history.replaceState({}, 'search', generateHashString(query));
     search(getQueryVariable());
 }
 
@@ -239,7 +231,7 @@ function toggleTag(tag) {
     if (!query.tags) query.tags = []
     if (query.tags && query.tags.indexOf(tag) >= 0) query.tags.splice(query.tags.indexOf(tag), 1);
     else query.tags.push(tag);
-    window.location.hash = generateHashString(query);
+    window.history.replaceState({}, 'search', generateHashString(query));
     onSearchButton();
 }
 
@@ -247,7 +239,8 @@ function addTag(tag) {
     let query = getQueryVariable();
     if (!query.tags) query.tags = [];
     if (query.tags.indexOf(tag) < 0) query.tags.push(tag);
-    window.location.hash = generateHashString(query);
+    window.history.replaceState({}, 'search', generateHashString(query));
+    onSearchButton();
 }
 
 $('#search-box').keypress(function (event) {

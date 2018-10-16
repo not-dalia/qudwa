@@ -89,6 +89,7 @@ body {
   min-height: 60px;
   width: 100%;
   min-width: 320px;
+
 }
 
 #header {
@@ -138,6 +139,8 @@ body {
 }
 
 #main {
+  flex: 1;
+  flex: 1 1 auto;
 }
 
 #search {
