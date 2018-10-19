@@ -215,6 +215,7 @@ body {
 
 .form-row .form-label {
     text-align: left;
+    margin-left: 10px;
 }
 
 .mentor-form-button .form-button {
@@ -234,5 +235,11 @@ body {
     }
     .mentor-card-big .post-type {
         font-family: 'Comfortaa', 'Noto Kufi Arabic', sans-serif;
+    }
+
+    .form-row .form-label {
+      text-align: right;
+      margin-right: 14px;
+      margin-left: 0;
     }
 }

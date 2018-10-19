@@ -208,6 +208,7 @@
 
 .form-row .form-label {
     text-align: right;
+    margin-right: 10px;
 }
 
 .mentor-form-button .form-button {
@@ -227,5 +228,11 @@
     }
     .mentor-card-big .post-type {
         font-family: 'Comfortaa', sans-serif;
+    }
+
+    .form-row .form-label {
+      text-align: left;
+      margin-left: 14px;
+      margin-right: 0;
     }
 }

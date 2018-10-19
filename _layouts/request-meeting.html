@@ -1,0 +1,101 @@
+---
+layout: default
+---
+
+<div class="mentor-pages" id="main" {% if page.lang=="ar" %}dir="rtl" {% endif %} data-selected-language="{{ page.lang }}">
+
+    <div class="shadow sh-1"></div>
+    <div class="mentor-container">
+        <div id="background-line"></div>
+        <div class="mentor-section">
+            <div class="mentor-card-big sh-2 block-card">
+                <div class="mentor-form">
+                    <div class="mentor-main">
+                        <div class="mentor-image"></div>
+                        <div class="mentor-info">
+                            <div class="mentor-name">{{ page.ref }}</div>
+                            <div class="mentor-title"></div>
+                        </div>
+                    </div>
+                    <div class="mentor-details">
+                        <div class="post-type"> <i class="fas fa-newspaper"></i><span>Request a meeting </span></div>
+                        <form class="form-group">
+                            <div class="form-row">
+                                <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+                                    quam velit, vulputate eu pharetra nec, mattis ac neque.</div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-label">Full Name</div>
+                                <div class="form-fields">
+                                    <input class="form-input" id="name" placeholder="Full Name" name="name" type="text" />
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-label">Email</div>
+                                <div class="form-fields">
+                                    <input class="form-input" id="email" placeholder="Email" name="email" type="email" />
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-label">Mobile Number</div>
+                                <div class="form-fields">
+                                    <input class="form-input" id="phone" placeholder="Mobile Number" name="phone" type="text" />
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-label">Date of Birth</div>
+                                <div class="form-fields">
+                                    <select class="form-input" id="input-day" placeholder="Day" name="birthday-day"
+                                        type="number">
+                                        <option value="" disabled="disabled" selected="selected">Day</option>
+                                    </select>
+                                    <select class="form-input" id="input-month" placeholder="Month" name="birthday-month"
+                                        type="number">
+                                        <option value="" disabled="disabled" selected="selected">Month</option>
+                                    </select>
+                                    <select class="form-input" id="input-year" placeholder="Year" name="birthday-year"
+                                        type="number">
+                                        <option value="" disabled="disabled" selected="selected">Year</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-label">Preferred Communication Method</div>
+                                <div class="form-fields">
+                                    <div class="field-row">
+                                        <input class="form-input" id="audio-call" name="communication" type="radio"
+                                            value="audio-call" />
+                                        <label for="audio-call">Audio Call</label>
+                                    </div>
+                                    <div class="field-row">
+                                        <input class="form-input" id="video-call" name="communication" type="radio"
+                                            value="video-call" />
+                                        <label for="Video-call">Video Call</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-label align-start">Describe Yourself</div>
+                                <div class="form-fields">
+                                    <textarea class="form-input" id="describe" placeholder="Describe yourself..." name="describe"></textarea>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-label align-start">Why would you like to contact this mentor?</div>
+                                <div class="form-fields">
+                                    <textarea class="form-input" id="reason" placeholder="Why would you like to contact this mentor?"
+                                        name="reason"></textarea>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="mentor-form-button"> <a class="form-button" href="#">Request a meeting with Mentor</a></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="{{ site.baseurl }}/mentors.{{page.lang}}.js"></script>
+<script type="text/javascript" src="{{ site.baseurl }}/js/url.bc.js"></script>
+<script type="text/javascript" src="{{ site.baseurl }}/js/request.js"></script>
