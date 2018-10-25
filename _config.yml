@@ -74,6 +74,7 @@ prose:
     - mentors.ar.js
     - mentors.en.js
     - README.md
+  media: "media"
   metadata:
     _mentors/arabic:
       - name: "ref"
