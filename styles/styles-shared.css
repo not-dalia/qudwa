@@ -318,6 +318,9 @@ body {
     width: 100%;
     height: 42%;
     border-radius: 10px 10px 0 0;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .mentor-card .mentor-name {
@@ -496,6 +499,9 @@ body {
     background: #843067;
     height: 252px;
     width: 252px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .mentor-card-big .mentor-info {
