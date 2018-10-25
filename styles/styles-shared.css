@@ -1,3 +1,7 @@
+html{
+    height: 100%;
+}
+
 .noselect {
     -webkit-touch-callout: none;
     -webkit-user-select: none;
@@ -185,6 +189,8 @@ body {
     overflow: hidden;
     height: 60px;
     max-width: 300px;
+    display: inline-block;
+    float: left;
 }
 
 #search .selected-tags .tag {
@@ -290,11 +296,13 @@ body {
     direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    text-align: center;
 }
 
 .mentor-card {
     height: 420px;
     padding: 20px;
+    display: inline-block;
 }
 
 .mentor-card .mentor-content {
@@ -363,6 +371,7 @@ body {
     font-weight: bold;
     font-size: 0.8em;
     text-decoration: none;
+    cursor: pointer;
 }
 
 .mentor-card ul.mentor-tags a:hover {
@@ -623,25 +632,25 @@ body {
     border-radius: 0 0 10px 10px;
 }
 
-.mentor-connect-dropdown .button-content .button-content-row:hover {
+.mentor-connect-dropdown .button-content .button-content-row:hover{
     background: rgb(252, 199, 172);
 }
 
-.mentor-connect-dropdown:hover {
-    border-radius: 10px 10px 0 0;
+.mentor-connect-dropdown-no-ie:hover, .mentor-connect-dropdown-hv  {
+    border-radius: 10px 10px 0 0 !important;
 }
 
-.mentor-connect-dropdown:hover .button-content,
-.mentor-connect-dropdown:focus .button-content {
-    display: block;
-    max-height: 500px;
+.mentor-connect-dropdown-no-ie:hover .button-content,
+.mentor-connect-dropdown-no-ie:focus .button-content, .button-content-hv {
+    display: block !important;
+    max-height: 500px !important;
     transition: max-height 0.25s ease-in;
 }
 
 .mentor-card-big .mentor-details {
     flex: 1;
     min-height: 200px;
-    min-width: 190px;
+    min-width: 165px;
     padding: 20px;
     padding-bottom: 60px;
     position: relative;
@@ -751,6 +760,7 @@ body {
     padding: 30px;
     padding-top: 10px;
     width: 100%;
+    box-sizing: border-box;
 }
 
 .mentor-card-big .post-type {
@@ -830,7 +840,6 @@ body {
     align-items: center;
     /* font-family: 'Comfortaa', sans-serif; */
     font-weight: bold;
-    font-size: 0.7em;
 }
 
 .form-row .description {
@@ -884,7 +893,11 @@ body {
 }
 
 .form-row #input-day {
-    width: 60px;
+    width: 100px;
+}
+
+.form-row #input-connect-through {
+    width: 100%;
 }
 
 .form-row #input-month {
@@ -892,7 +905,7 @@ body {
 }
 
 .form-row #input-year {
-    width: 80px;
+    width: 100px;
 }
 
 .form-row .field-row {
@@ -936,13 +949,58 @@ body {
     display: block !important;
 }
 
+#back-to-profile {
+    cursor: pointer;
+    color: rgba(159, 159, 159, 1);
+    background: #efedee;
+    border-radius: 3px;
+    padding: 5px 8px;
+    font-size: 0.8em;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+#back-to-profile:hover {
+    color: rgba(77, 182, 172, 1);
+    background: rgba(255, 255, 255, 1);
+}
+
+#social-profiles-container{
+    width: 100%;
+}
+
+a#add_another_profile{
+    color: rgba(255,138,101,1);
+    font-size: 0.9em;
+    padding: 3px 2px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+a#add_another_profile:hover{
+    text-decoration: underline;
+}
+
+.mentor-form.no-image .inner-container{
+    max-width: 550px;
+    margin: 0 auto; 
+    margin-bottom: 1em;
+}
+
 @media only screen and (max-width: 562px) {
+    #header .logo-text {
+        display: none;
+    }
+
+    
     .mentor-container {
         min-width: 310px;
         max-width: 360px;
     }
     .mentor-card-big .mentor-main {
         border: none;
+        border-left: none !important;
+        border-right: none !important;
         border-bottom: 3px dotted rgb(239, 237, 238);
         min-width: 250px;
         max-width: 300px;
@@ -1012,6 +1070,8 @@ body {
 }
 
 @media only screen and (max-width: 719px) {
+
+    
     .mentor-form {
         flex-direction: column;
         align-items: center;
@@ -1032,25 +1092,28 @@ body {
         height: 70px;
         min-width: 70px;
         width: 70px;
-        border-radius: 100px;
+        border-radius: 100px !important;
         margin: 10px;
         display: inline-block;
-        float: left;
     }
     .mentor-form .mentor-info {
         margin: 10px;
         display: inline-flex;
         font-size: 12px;
         padding: 0 5px;
-        float: left;
-        /*     max-width: 140px; */
+        max-width: 140px;
         height: 70px;
         flex-direction: column;
         align-items: center;
         justify-content: center;
     }
+    .mentor-card-big .post-type {
+        border-radius: 10px 10px 0 0 !important;
+        width: 100%;
+        box-sizing: border-box;
+    }
     .mentor-form .post-type {
-        border-radius: 0;
+        border-radius: 0 !important;
         width: 100%;
         box-sizing: border-box;
     }

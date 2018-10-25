@@ -4,7 +4,7 @@
         if (localStorage.lang)
             redirectToHome(localStorage.lang);
         else {
-            let userLang = navigator.language || navigator.userLanguage;
+            var userLang = navigator.language || navigator.userLanguage;
             if (userLang) userLang = userLang.split('-')[0];
             redirectToHome(userLang);
         }

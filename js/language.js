@@ -2,7 +2,10 @@ function languageSelect(url, language){
     if (typeof(Storage) !== "undefined") {
         localStorage.lang = language;
     } 
-    location.href = url;
+
+    var params = window.location.search;
+
+    location.href = url+params;
 }
 
 function checkLanguage(url, urls){

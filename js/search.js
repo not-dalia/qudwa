@@ -1,4 +1,4 @@
-let idx = lunr(function () {
+var idx = lunr(function () {
     this.use(lunr.multiLanguage('en', 'ar'));
 
     this.field('id');
@@ -7,7 +7,7 @@ let idx = lunr(function () {
     this.field('shortBio');
     this.field('tags', { boost: 5 });
     this.field('excerpt');
-    for (let key in mentors) { // Add the data to lunr
+    for (var key in mentors) { // Add the data to lunr
         this.add({
             'id': key,
             'url': mentors[key].url,
@@ -21,40 +21,40 @@ let idx = lunr(function () {
 
 
 function displaySearchResults(results, store) {
-    let searchResults = $('#mentor-list');
+    var searchResults = $('#mentor-list');
     searchResults.empty();
 
     if (results.length) { // Are there any results?
-        let appendString = '';
+        var appendString = '';
         $('#search-tags').empty();
 
-        for (let i = 0; i < results.length; i++) {  // Iterate over the results
-            let item = store[results[i].ref];
+        for (var i = 0; i < results.length; i++) {  // Iterate over the results
+            var item = store[results[i].ref];
 
 
-            let card = $('<div />', { "class": "mentor-card" });
+            var card = $('<div />', { "class": "mentor-card" });
 
-            let cardShadow = $('<div />', { "class": "mentor-content sh-2 hv" });
-            let cardImage = $('<div />', { "class": "mentor-image" });
-            let cardInfo = $('<div />', { "class": "mentor-info" });
+            var cardShadow = $('<div />', { "class": "mentor-content sh-2 hv" });
+            var cardImage = $('<div />', { "class": "mentor-image" });
+            var cardInfo = $('<div />', { "class": "mentor-info" });
 
-            let cardInfoName = $('<div />', { "class": "mentor-name" });
-            let cardInfoNameLink = $('<a />', { text: item.title, href: item.url });
+            var cardInfoName = $('<div />', { "class": "mentor-name" });
+            var cardInfoNameLink = $('<a />', { text: item.title, href: item.url });
             cardInfoName.append(cardInfoNameLink);
 
-            let jobTitle = '';
+            var jobTitle = '';
             if (item.jobtitle) jobTitle += item.jobtitle;
             if (item.workplace) {
                 if (item.jobtitle) jobTitle += ($('#main').attr('data-selected-language') == 'ar' ? '، ' : ', ');
                 jobTitle += item.workplace;
             }
-            let cardInfoJobTitle = $('<div />', { "class": "mentor-title", text: jobTitle });
-            let cardInfoBio = $('<div />', { "class": "mentor-bio", text: item.shortBio });
+            var cardInfoJobTitle = $('<div />', { "class": "mentor-title", text: jobTitle });
+            var cardInfoBio = $('<div />', { "class": "mentor-bio", text: item.shortBio });
 
-            let cardInfoTags = $('<ul />', { "class": "mentor-tags" });
+            var cardInfoTags = $('<ul />', { "class": "mentor-tags" });
 
-            let tags = item.tags.split(',');
-            let query = getQueryVariable();
+            var tags = item.tags.split(',');
+            var query = getQueryVariable();
             if (!query.tags) query.tags = [];
 
             tags.forEach(function(el, i) {
@@ -62,7 +62,7 @@ function displaySearchResults(results, store) {
                 if (query.tags.indexOf(el.trim()) < 0) $('#search-tags').append('<li>' + '<a onclick="javascript:toggleTag(\'' + el.trim() + '\')">' + el.trim() + '</a>' + '</li>');
             });
 
-            let cardInfoSocial = $('<ul />', { "class": "mentor-social" });
+            var cardInfoSocial = $('<ul />', { "class": "mentor-social" });
 
             for (var key in item['social-accounts']) {
                 // skip loop if the property is from prototype
@@ -96,36 +96,36 @@ function displaySearchResults(results, store) {
 
 function displayAll(store) {
     console.log(store);
-    let searchResults = $('#mentor-list');
+    var searchResults = $('#mentor-list');
     searchResults.empty();
-    let appendString = '';
+    var appendString = '';
     $('#search-tags').empty();
 
-    for (let i = 0; i < store.length; i++) {  // Iterate over the results
-        let item = store[i];
-        let card = $('<div />', { "class": "mentor-card" });
+    for (var i = 0; i < store.length; i++) {  // Iterate over the results
+        var item = store[i];
+        var card = $('<div />', { "class": "mentor-card" });
 
-        let cardShadow = $('<div />', { "class": "mentor-content sh-2 hv" });
-        let cardImage = $('<div />', { "class": "mentor-image" });
-        let cardInfo = $('<div />', { "class": "mentor-info" });
+        var cardShadow = $('<div />', { "class": "mentor-content sh-2 hv" });
+        var cardImage = $('<div />', { "class": "mentor-image" });
+        var cardInfo = $('<div />', { "class": "mentor-info" });
 
-        let cardInfoName = $('<div />', { "class": "mentor-name" });
-        let cardInfoNameLink = $('<a />', { text: item.title, href: item.url });
+        var cardInfoName = $('<div />', { "class": "mentor-name" });
+        var cardInfoNameLink = $('<a />', { text: item.title, href: item.url });
         cardInfoName.append(cardInfoNameLink);
 
-        let jobTitle = '';
+        var jobTitle = '';
         if (item.jobtitle) jobTitle += item.jobtitle;
         if (item.workplace) {
             if (item.jobtitle) jobTitle += ($('#main').attr('data-selected-language') == 'ar' ? '، ' : ', ');
             jobTitle += item.workplace;
         }
-        let cardInfoJobTitle = $('<div />', { "class": "mentor-title", text: jobTitle });
-        let cardInfoBio = $('<div />', { "class": "mentor-bio", text: item.shortBio });
+        var cardInfoJobTitle = $('<div />', { "class": "mentor-title", text: jobTitle });
+        var cardInfoBio = $('<div />', { "class": "mentor-bio", text: item.shortBio });
 
-        let cardInfoTags = $('<ul />', { "class": "mentor-tags" });
+        var cardInfoTags = $('<ul />', { "class": "mentor-tags" });
 
-        let tags = item.tags.split(',');
-        let query = getQueryVariable();
+        var tags = item.tags.split(',');
+        var query = getQueryVariable();
         if (!query.tags) query.tags = [];
         
         tags.forEach(function(el, i){
@@ -134,7 +134,7 @@ function displayAll(store) {
         });
 
 
-        let cardInfoSocial = $('<ul />', { "class": "mentor-social" });
+        var cardInfoSocial = $('<ul />', { "class": "mentor-social" });
 
         for (var key in item['social-accounts']) {
             // skip loop if the property is from prototype
@@ -163,14 +163,14 @@ function displayAll(store) {
 }
 
 function getQueryVariable() {
-    let hash = window.location.hash.substring(1);
-    let values = decodeURIComponent(hash.replace(/\+/g, '%20')).split(';');
-    let query = {
+    var hash = window.location.hash.substring(1);
+    var values = decodeURIComponent(hash.replace(/\+/g, '%20')).split(';');
+    var query = {
         search: null,
         tags: null,
     };
     values.forEach(function(el){
-        let currentQuery = el.split(':');
+        var currentQuery = el.split(':');
         if (currentQuery.length == 2)
             query[currentQuery[0]] = currentQuery[1];
     });
@@ -182,16 +182,16 @@ function getQueryVariable() {
 
 function search(query) {
     if (query.search && query.search.trim() != '') {
-        let searchTerm = query.search.trim();
+        var searchTerm = query.search.trim();
         document.getElementById('search-box').setAttribute("value", searchTerm);
 
-        let unfilteredResults = idx.search(searchTerm);
-        let results = unfilteredResults;
+        var unfilteredResults = idx.search(searchTerm);
+        var results = unfilteredResults;
         if (query.tags && query.tags.length > 0) {
             results = unfilteredResults.filter(function(el){
-                let item = mentors[el.ref];
-                let tagFound = true;
-                let itemTags = item.tags.split(', ');
+                var item = mentors[el.ref];
+                var tagFound = true;
+                var itemTags = item.tags.split(', ');
                 query.tags.forEach(function(el, i){
                     if (itemTags.indexOf(el.trim()) < 0) {
                         tagFound = false;
@@ -203,11 +203,11 @@ function search(query) {
         }
         displaySearchResults(results, mentors);
     } else {
-        let results = mentors;
+        var results = mentors;
         if (query.tags && query.tags.length > 0) {
             results = mentors.filter(function(item){
-                let tagFound = true;
-                let itemTags = item.tags.split(', ');
+                var tagFound = true;
+                var itemTags = item.tags.split(', ');
                 query.tags.forEach(function(el, i) {
                     if (itemTags.indexOf(el.trim()) < 0) {
                         tagFound = false;
@@ -223,8 +223,8 @@ function search(query) {
 };
 
 function onSearchButton() {
-    let searchTerm = document.getElementsByName("query")[0].value;
-    let query = getQueryVariable();
+    var searchTerm = document.getElementsByName("query")[0].value;
+    var query = getQueryVariable();
     query.search = encodeURIComponent(searchTerm.trim());
     //window.location.hash = generateHashString(query);
     window.history.replaceState({}, 'search', generateHashString(query));
@@ -232,7 +232,7 @@ function onSearchButton() {
 }
 
 function toggleTag(tag) {
-    let query = getQueryVariable();
+    var query = getQueryVariable();
     if (!query.tags) query.tags = [];
     if (query.tags && query.tags.indexOf(tag) >= 0) query.tags.splice(query.tags.indexOf(tag), 1);
     else query.tags.push(tag);
@@ -242,7 +242,7 @@ function toggleTag(tag) {
 }
 
 function addTag(tag) {
-    let query = getQueryVariable();
+    var query = getQueryVariable();
     if (!query.tags) query.tags = [];
     if (query.tags.indexOf(tag) < 0) query.tags.push(tag);
     renderSelectedTags(query.tags);
@@ -252,10 +252,10 @@ function addTag(tag) {
 
 function renderSelectedTags(tags){
     if (!tags) return;
-    let selectedTags = document.querySelector('#selected-tags');
+    var selectedTags = document.querySelector('#selected-tags');
     selectedTags.innerHTML = '';
-    let tagsHTML = '';
-    for (let i = 0; i < tags.length; i++){
+    var tagsHTML = '';
+    for (var i = 0; i < tags.length; i++){
         tagsHTML += '<div class="tag"><div class="tag-side"> ' + tags[i].trim() +' </div> <div class="close-side" onclick="javascript:toggleTag(\'' + tags[i].trim() + '\')">⨯</div></div>';
     }
 
@@ -269,7 +269,7 @@ $('#search-box').keypress(function (event) {
 });
 
 $('body').on('click', '.search-inner', function(e) {
-    let target = $(e.target);
+    var target = $(e.target);
     $('#search-box').focus();
 });
 

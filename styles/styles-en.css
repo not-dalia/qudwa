@@ -103,6 +103,8 @@
 
 .mentor-card-big .mentor-main {
     border-right: 3px dotted rgb(239, 237, 238);
+    float: left;
+
 }
 
 .mentor-card-big .mentor-image {
@@ -204,6 +206,7 @@
 
 .form-group .form-row {
     font-family: 'Comfortaa', sans-serif;
+    font-size: 0.9em;
 }
 
 .form-row .form-label {
@@ -213,6 +216,10 @@
 
 .mentor-form-button .form-button {
     font-family: "Cabin", sans-serif;
+}
+
+#back-to-profile{
+    font-family: 'Comfortaa', sans-serif;
 }
 
 @media only screen and (max-width: 562px) {
@@ -234,5 +241,14 @@
       text-align: left;
       margin-left: 14px;
       margin-right: 0;
+    }
+}
+
+@media only screen and (max-width: 719px) {
+   .mentor-form .mentor-image {
+        float: left;
+    }
+    .mentor-form .mentor-info {
+        float: left;
     }
 }

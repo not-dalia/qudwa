@@ -52,6 +52,135 @@ could_not_find_help:
 let_us_help:
   en: "Let us help"
   ar: "دعينا نساعدك"
+let_us_help_help:
+  en: "If you looked for a mentor in a specific field and you didn’t find someone that can help you, then send us your request through this form and we will try to find you a mentor."
+  ar: "هل بحثتِ عن قدوة و لم تجدي من يستطيع مساعدتك في مجال معين؟ دعينا نساعدك. املئي النموذج و سنبذل جهدنا في البحث عن قدوة."
 recommend_mentor:
   en: "Recommend a mentor"
   ar: "ترشيح قدوة"
+recommend_mentor_help:
+  en: "Did you ever get in contact with a mentor in any other platform or in person and you would recommend that she joins our network of mentors, fill the form and we will send her an invitation."
+  ar: "هل سبق و تواصلتِ مع قدوة على أي منصة او تواصلتِ معها شخصيا و ترشحين انضمامها لمنصتنا، يمكننا دعوتها للانضمام الينا عن طريق هذا النموذج."
+full_name:
+  en: "Full Name"
+  ar: "الاسم الكامل"
+mobile_no:
+  en: "Mobile number"
+  ar: "رقم الجوال"
+email_address:
+  en: "Email"
+  ar: "البريد الالكتروني"
+dob:
+  en: "Date of birth"
+  ar: "تاريخ الميلاد"
+preferred_comm_method:
+  en: "Preferred communication method"
+  ar: "وسيلة التواصل المفضلة"
+audio_call:
+  en: "Audio call"
+  ar: "اتصال صوتي"
+video_call:
+  en: "Video call"
+  ar: "اتصال مرئي"
+introduce_yourself:
+  en: "Introduce yourself"
+  ar: "عرفينا بنفسك"
+why_this_mentor:
+  en: "Why would you like to contact this mentor?"
+  ar: "لماذا ترغبين بالتواصل مع هذه القدوة؟"
+why_a_mentor:
+  en: "Why would you like to contact a mentor?"
+  ar: "لماذا ترغبين بالتواصل مع قدوة؟"
+connect_through:
+  en: "Connect through"
+  ar: "التواصل عبر"
+what_field_interest:
+  en: "What field interests you?"
+  ar: "ما هو المجال الذي مهتمة فيه؟"
+day:
+  en: "Day"
+  ar: "اليوم"
+month:
+  en: "Month"
+  ar: "الشهر"
+year:
+  en: "Year"
+  ar: "السنة"
+request_meething_with:
+  en: "Request a meeting with "
+  ar: "إرسال طلب اللقاء الالكتروني مع "
+back_to_profile:
+  en: "← Back to mentor profile"
+  ar: "→ العودة الى ملف القدوة"
+connect_through:
+  en: "Connect through"
+  ar: "التواصل عبر"
+facebook:
+  en: "Facebook"
+  ar: "فيسبوك"
+twitter:
+  en: "Twitter"
+  ar: "تويتر"
+linkedin:
+  en: "LinkedIn"
+  ar: "لينكدإن"
+instagram:
+  en: "Instagram"
+  ar: "انستقرام"
+your_profile:
+  en: "Your -0- profile"
+  ar: "حسابك الشخصي على -0-"
+what_field:
+  en: "What field interests you?"
+  ar: "ما هو المجال الذي مهتمة فيه؟"
+submit:
+  en: "Submit"
+  ar: "إرسال"
+mentor_full_name:
+  en: "Mentor's full name"
+  ar: "الاسم الكامل للقدوة"
+mentor_email:
+  en: "Mentor's email"
+  ar: "البريد الالكتروني للقدوة"
+mentor_phone:
+  en: "Mentor's mobile number"
+  ar: "رقم الجوال للقدوة"
+mentor_social:
+  en: "Mentor's social profiles"
+  ar: "حسابات القدوة الاجتماعية"
+mentor_social_placeholder:
+  en: "Facebook, Twitter, LinkedIn, Instagram, ..."
+  ar: "فيسبوك، تويتر، لينكدإن، انستقرام، ..."
+add_another_profile:
+  en: "+ Add another profile"
+  ar: "+ إضف حساب اجتماعي آخر"
+back_to_main:
+  en: "← Back to main page"
+  ar: "→ العودة الى الصفحة الرئيسية"
+months:
+  en: 
+    - January
+    - February
+    - March
+    - April
+    - May
+    - June
+    - July
+    - August
+    - September
+    - October
+    - November
+    - December
+  ar: 
+    - يناير
+    - فبراير
+    - مارس
+    - أبريل
+    - مايو
+    - يونيو
+    - يوليو
+    - أغسطس
+    - سبتمبر
+    - أكتوبر
+    - نوفمبر
+    - ديسمبر

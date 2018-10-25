@@ -8,7 +8,8 @@ layout: default
     <div class="mentor-container">
         <div id="background-line"></div>
         <div class="mentor-section">
-            <div id="back-to-profile" onclick="javascript:goback('{{ site.baseurl }}/{{ page.lang }}');">{{ site.data.t.back_to_profile[page.lang] }}</div>
+            <div id="back-to-profile" onclick="javascript:goback('{{ site.baseurl }}/{{ page.lang }}');">{{
+                site.data.t.back_to_profile[page.lang] }}</div>
             <div class="mentor-card-big sh-2 block-card">
                 <div class="mentor-form">
                     <div class="mentor-main">
@@ -19,27 +20,31 @@ layout: default
                         </div>
                     </div>
                     <div class="mentor-details">
-                        <div class="post-type"> <i class="fas fa-newspaper"></i><span>{{ site.data.t.request_meeting[page.lang] }}</span></div>
+                        <div class="post-type"> <i class="fas fa-newspaper"></i><span>{{
+                                site.data.t.request_intro[page.lang] }}</span></div>
                         <form class="form-group">
                             <div class="form-row">
-                                <div class="description">{{ site.data.t.request_meeting_help[page.lang] }}</div>
+                                <div class="description">{{ site.data.t.request_intro_help[page.lang] }}</div>
                             </div>
                             <div class="form-row">
                                 <div class="form-label">{{ site.data.t.full_name[page.lang] }}</div>
                                 <div class="form-fields">
-                                    <input class="form-input" id="name" placeholder="{{ site.data.t.full_name[page.lang] }}" name="name" type="text" />
+                                    <input class="form-input" id="name" placeholder="{{ site.data.t.full_name[page.lang] }}"
+                                        name="name" type="text" />
                                 </div>
                             </div>
                             <div class="form-row">
                                 <div class="form-label">{{ site.data.t.email_address[page.lang] }}</div>
                                 <div class="form-fields">
-                                    <input class="form-input" id="email" placeholder="{{ site.data.t.email_address[page.lang] }}" name="email" type="email" />
+                                    <input class="form-input" id="email" placeholder="{{ site.data.t.email_address[page.lang] }}"
+                                        name="email" type="email" />
                                 </div>
                             </div>
                             <div class="form-row">
                                 <div class="form-label">{{ site.data.t.mobile_no[page.lang] }}</div>
                                 <div class="form-fields">
-                                    <input class="form-input" id="phone" placeholder="{{ site.data.t.mobile_no[page.lang] }}" name="phone" type="text" />
+                                    <input class="form-input" id="phone" placeholder="{{ site.data.t.mobile_no[page.lang] }}"
+                                        name="phone" type="text" />
                                 </div>
                             </div>
                             <div class="form-row">
@@ -72,24 +77,28 @@ layout: default
                                 </div>
                             </div>
                             <div class="form-row">
-                                <div class="form-label">{{ site.data.t.preferred_comm_method[page.lang] }}</div>
+                                <div class="form-label">{{ site.data.t.connect_through[page.lang] }}</div>
                                 <div class="form-fields">
-                                    <div class="field-row">
-                                        <input class="form-input" id="audio-call" name="communication" type="radio"
-                                            value="audio-call" />
-                                        <label for="audio-call">{{ site.data.t.audio_call[page.lang] }}</label>
-                                    </div>
-                                    <div class="field-row">
-                                        <input class="form-input" id="video-call" name="communication" type="radio"
-                                            value="video-call" />
-                                        <label for="Video-call">{{ site.data.t.video_call[page.lang] }}</label>
-                                    </div>
+                                    <select class="form-input" id="input-connect-through" name="connect-through" onchange="javascript:changeLabel();">
+                                        <option value="facebook" selected="selected">{{ site.data.t.facebook[page.lang] }}</option>
+                                        <option value="twitter">{{ site.data.t.twitter[page.lang] }}</option>
+                                        <option value="linkedin">{{ site.data.t.linkedin[page.lang] }}</option>
+                                        <option value="instagram">{{ site.data.t.instagram[page.lang] }}</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-label" id="label-your-profile"></div>
+                                <div class="form-fields">
+                                    <input class="form-input" id="social-profile"
+                                        name="social-profile" type="text" />
                                 </div>
                             </div>
                             <div class="form-row">
                                 <div class="form-label align-start">{{ site.data.t.introduce_yourself[page.lang] }}</div>
                                 <div class="form-fields">
-                                    <textarea class="form-input" id="describe" placeholder="{{ site.data.t.introduce_yourself[page.lang] }}..." name="describe"></textarea>
+                                    <textarea class="form-input" id="describe" placeholder="{{ site.data.t.introduce_yourself[page.lang] }}..."
+                                        name="describe"></textarea>
                                 </div>
                             </div>
                             <div class="form-row">
@@ -102,7 +111,8 @@ layout: default
                         </form>
                     </div>
                 </div>
-                <div class="mentor-form-button"> <a class="form-button" href="#">{{ site.data.t.request_meething_with[page.lang] }}<span id="btn-mentor-name">Mentor</span></a></div>
+                <div class="mentor-form-button"> <a class="form-button" href="#">{{
+                        site.data.t.request_meething_with[page.lang] }}<span id="btn-mentor-name">Mentor</span></a></div>
             </div>
         </div>
     </div>
@@ -110,3 +120,15 @@ layout: default
 
 <script type="text/javascript" src="{{ site.baseurl }}/mentors.{{page.lang}}.js"></script>
 <script type="text/javascript" src="{{ site.baseurl }}/js/request.js"></script>
+<script>
+    function changeLabel(){
+        var selectedProfileType = $('#input-connect-through').val();
+        var selectedProfileText = $('option[value=' + selectedProfileType + ']').text();
+        var labelText = "{{ site.data.t.your_profile[page.lang] }}".replace('-0-', selectedProfileText);
+        $('#label-your-profile').text(labelText);
+        $('#social-profile').attr('placeholder', labelText);
+    }
+
+    changeLabel();
+
+</script>

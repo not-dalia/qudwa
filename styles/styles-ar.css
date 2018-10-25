@@ -109,6 +109,8 @@ body {
 
 .mentor-card-big .mentor-main {
     border-left: 3px dotted rgb(239, 237, 238);
+    float: right;
+
 }
 
 .mentor-card-big .mentor-image {
@@ -211,6 +213,7 @@ body {
 
 .form-group .form-row {
     font-family: 'Comfortaa', 'Noto Kufi Arabic', sans-serif;
+    font-size: 0.7em;
 }
 
 .form-row .form-label {
@@ -220,6 +223,10 @@ body {
 
 .mentor-form-button .form-button {
     font-family: 'Cabin', arial, sans-serif;
+}
+
+#back-to-profile{
+    font-family: 'Comfortaa', 'Noto Kufi Arabic', sans-serif;
 }
 
 @media only screen and (max-width: 562px) {
@@ -243,3 +250,13 @@ body {
       margin-left: 0;
     }
 }
+
+
+@media only screen and (max-width: 719px) {
+    .mentor-form .mentor-image {
+         float: right;
+     }
+     .mentor-form .mentor-info {
+         float: right;
+     }
+ }
