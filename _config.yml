@@ -85,6 +85,10 @@ prose:
         field:
           element: "text"
           label: Name
+      - name: "image"
+        field:
+          element: "text"
+          label: image
       - name: "tags"
         field:
           element: "multiselect"
