@@ -1,7 +1,7 @@
 {
     "id": "{{ forloop.index }}",
     "ref": "{{ mentor.ref }}",
-    "image": "{{ mentor.image }}",
+    "image": "{{ site.baseurl }}/{{ mentor.image }}",
     "url": "{{ site.baseurl }}{{ mentor.url }}",
     "title": "{{ mentor.name }}",
     "jobtitle": "{{ mentor.jobtitle }}",

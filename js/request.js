@@ -22,6 +22,10 @@ function popoulateMentor() {
       jobTitle += currentMentor.workplace;
     }
     document.querySelector("#mentor-title").innerHTML = jobTitle;
+    document.querySelector("#mentor-image").style.backgroundImage = "url('" + currentMentor.image + "')";
+    document.querySelector("#mentor-image").style.backgroundPosition = "center";
+    document.querySelector("#mentor-image").style.backgroundSize = "cover";
+    document.querySelector("#mentor-image").style.backgroundRepeat = "no-repeat";
   } else {
     console.log("Mentor not found");
     window.location.href = "/404";

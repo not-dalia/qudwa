@@ -10,6 +10,7 @@ var idx = lunr(function () {
     for (var key in mentors) { // Add the data to lunr
         this.add({
             'id': key,
+            'image': mentors[key].image,
             'url': mentors[key].url,
             'title': mentors[key].title,
             'excerpt': mentors[key].excerpt,
@@ -36,6 +37,7 @@ function displaySearchResults(results, store) {
 
             var cardShadow = $('<div />', { "class": "mentor-content sh-2 hv" });
             var cardImage = $('<div />', { "class": "mentor-image" });
+            cardImage.css('background-image', 'url(' + item.image + ')');
             var cardInfo = $('<div />', { "class": "mentor-info" });
 
             var cardInfoName = $('<div />', { "class": "mentor-name" });
@@ -107,6 +109,8 @@ function displayAll(store) {
 
         var cardShadow = $('<div />', { "class": "mentor-content sh-2 hv" });
         var cardImage = $('<div />', { "class": "mentor-image" });
+        cardImage.css('background-image', 'url(' + item.image + ')');
+
         var cardInfo = $('<div />', { "class": "mentor-info" });
 
         var cardInfoName = $('<div />', { "class": "mentor-name" });
