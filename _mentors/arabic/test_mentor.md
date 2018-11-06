@@ -35,6 +35,6 @@ social-accounts:
   facebook: 'http://facebook.com/test'
   twitter: 'http://twitter.com/test'
 published: true
-image: media/Photo_1d5574d.jpg
+image: 'https://not-dalia.github.io/qudwa/media/Photo_1d5574d.jpg'
 
 ---
