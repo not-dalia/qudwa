@@ -1,0 +1,9 @@
+languages: 
+  - name: english
+    key: en
+  - name: arabic
+    key: ar
+
+media: 'media'
+mentors: '_mentors'
+posts: '_mentor_posts'
