@@ -12,7 +12,9 @@
           {% if page.lang == mentor.lang %}
             <a class="{{ mentor.lang }} selected" >{{ site.data.t.language[mentor.lang] }}</a>
           {% else %}
-            <a class="{{ mentor.lang }}" onclick="javascript:languageSelect('{{ mentor.url | prepend: site.baseurl }}', '{{mentor.lang}}');">{{ site.data.t.language[mentor.lang] }}</a>
+            {%if mentor.name and mentor.name!='' %}
+              <a class="{{ mentor.lang }}" onclick="javascript:languageSelect('{{ mentor.url | prepend: site.baseurl }}', '{{mentor.lang}}');">{{ site.data.t.language[mentor.lang] }}</a>
+            {% endif %}
           {% endif %}
           {% if forloop.last != true %}
             &nbsp;&nbsp; | &nbsp;&nbsp;

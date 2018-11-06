@@ -162,8 +162,8 @@ body {
 }
 
 .mentor-connect-dropdown .button-content .button-content-help:hover::after {
-    left: auto;
-    right: 100%;
+    left: 0;
+    right: auto;
 }
 
 .mentor-details .tags-row a {

@@ -202,9 +202,13 @@ function search(query) {
                     }
                 });
 
-                return tagFound
+                return (tagFound && item.title && item.title.trim()!='')
             });
         }
+        results = results.filter(function(el){
+            var item = mentors[el.ref];
+            return (item.title && item.title.trim()!='');
+        })
         displaySearchResults(results, mentors);
     } else {
         var results = mentors;
@@ -218,9 +222,12 @@ function search(query) {
                     }
                 });
 
-                return tagFound
+                return (tagFound && item.title && item.title.trim()!='')
             });
         }
+        results = results.filter(function(item){
+            return (item.title && item.title.trim()!='');
+        })
         displayAll(results);
     }
     renderSelectedTags(query.tags);
