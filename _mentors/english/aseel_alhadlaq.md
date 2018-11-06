@@ -18,6 +18,6 @@ topics: []
 interests: []
 education-experience: []
 social-accounts:
-  twitter: '@aseel'
+  twitter: 'https://twitter.com/aseel'
 
 ---

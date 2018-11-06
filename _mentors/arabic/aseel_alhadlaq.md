@@ -12,7 +12,7 @@ topics: []
 interests: []
 education-experience: []
 social-accounts:
-  twitter: '@aseel'
+  twitter: 'https://twitter.com/aseel'
 lang: ar
 categories: ar
 published: true
