@@ -16,12 +16,13 @@ longbio: >-
   العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق. النص
   لن يبدو مقسما ولا يحوي أخطاء لغوية.
 education-experience:
-  - title: الوظيفة السابفة
+  - title: الوظيفة السابقة
     place: محل العمل السابق
     description: وصف يتعلق بهذا الجزء
     duration: 2014-حتى الآن
   - title: طالبة
     place: الجامعة الفلانية
+    description: ''
     duration: 2009-2014
 topics:
   - موضوع
@@ -34,4 +35,6 @@ social-accounts:
   facebook: 'http://facebook.com/test'
   twitter: 'http://twitter.com/test'
 published: true
+image: media/Photo_1d5574d.jpg
+
 ---
