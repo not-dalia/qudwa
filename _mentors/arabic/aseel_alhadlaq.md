@@ -13,5 +13,8 @@ interests: []
 education-experience: []
 social-accounts:
   twitter: '@aseel'
+lang: ar
+categories: ar
+published: true
 
 ---
