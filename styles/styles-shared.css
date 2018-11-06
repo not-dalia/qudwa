@@ -691,6 +691,7 @@ body {
     padding: 5px;
     font-weight: bold;
     line-height: 1.3em;
+    word-break: break-word;
 }
 
 .mentor-details .details-row {
