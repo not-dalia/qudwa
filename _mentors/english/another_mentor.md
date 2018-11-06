@@ -26,4 +26,7 @@ interests:
 social-accounts:
   link: 'http://example.com'
 published: true
+workplace: ''
+image: ''
+
 ---
