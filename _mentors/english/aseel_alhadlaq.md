@@ -3,6 +3,7 @@ ref: aseel_alhadlaq
 name: Aseel
 jobtitle: Lecturer
 lang: en
+categories: en
 workplace: King Saud University
 published: true
 shortbio: kvfklvmkdfmvkfdv
