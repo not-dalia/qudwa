@@ -27,6 +27,7 @@ education-experience:
     duration: 2014-current
   - title: Student
     place: Some Fancy Uni
+    description: ''
     duration: 2009-2014
 topics:
   - Something
@@ -42,4 +43,5 @@ social-accounts:
   twitter: 'http://twitter.com/test'
 published: true
 image: media/Photo_1d5574d.jpg
+
 ---
