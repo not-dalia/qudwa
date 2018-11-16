@@ -57,7 +57,7 @@ layout: default
           <div class="long-bio-row">
             {{ page.longbio }}
           </div>
-          {% if page.education-experience and page.education-experience.length > 0 %}
+          {% if page.education-experience %}
           <div class="details-row" id="education">
             <div class="icon"> <i class="fas fa-graduation-cap"></i></div>
             <div class="title">{{ site.data.t.education_experience[page.lang] }}</div>
@@ -72,7 +72,7 @@ layout: default
           </div>
           {% endif %}
 
-          {% if page.topics and page.topics.length > 0 %}
+          {% if page.topics %}
           <div class="details-row" id="topics">
             <div class="icon"> <i class="fas fa-bookmark"></i></div>
             <div class="title">{{ site.data.t.topics_i_can_help_with[page.lang] }}</div>
@@ -82,7 +82,7 @@ layout: default
           </div>
           {% endif %}
 
-          {% if page.interests and page.interests.length > 0 %}
+          {% if page.interests %}
           <div class="details-row" id="interests">
             <div class="icon"> <i class="fas fa-heart"></i></div>
             <div class="title">{{ site.data.t.interests[page.lang] }}</div>
