@@ -1,10 +1,12 @@
 ---
-title: post
-mentor: "Test Mentor"
-date: 2018-03-14 15:57:46 +0000
-ref: "test_mentor"
+title: تجربة
+ref: test_mentor
 lang: ar
+langName: arabic
+date: 'Sun, 18 Nov 2018 08:11:51 GMT'
+
 ---
+
 
 #### مقالة من المدربة
 
