@@ -115,9 +115,9 @@ back_to_profile:
 connect_through:
   en: "Connect through"
   ar: "التواصل عبر"
-facebook:
-  en: "Facebook"
-  ar: "فيسبوك"
+snapchat:
+  en: "Snapchat"
+  ar: "سنابشات"
 twitter:
   en: "Twitter"
   ar: "تويتر"
@@ -149,8 +149,8 @@ mentor_social:
   en: "Mentor's social profiles"
   ar: "حسابات القدوة الاجتماعية"
 mentor_social_placeholder:
-  en: "Facebook, Twitter, LinkedIn, Instagram, ..."
-  ar: "فيسبوك، تويتر، لينكدإن، انستقرام، ..."
+  en: "Snapchat, Twitter, LinkedIn, Instagram, ..."
+  ar: "سنابشات، تويتر، لينكدإن، انستقرام، ..."
 add_another_profile:
   en: "+ Add another profile"
   ar: "+ إضف حساب اجتماعي آخر"

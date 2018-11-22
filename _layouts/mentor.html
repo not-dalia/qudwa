@@ -12,8 +12,8 @@ layout: default
           <div class="mentor-image" style="background-image: url('{{ page.image }}')"></div>
           <div class="mentor-info">
             <div class="mentor-name">{{ page.name }}</div>
-            <div class="mentor-title">{% if page.jobtitle %}{{ page.jobtitle }}{% endif %}{% if page.jobtitle and
-              page.workplace %}, {% endif %}{% if page.workplace %}{{ page.workplace }}{% endif %}</div>
+            <div class="mentor-title">{% if page.jobtitle and page.jobtitle != '' %}{{ page.jobtitle }}{% endif %}{% if page.jobtitle and
+              page.workplace and page.jobtitle != '' and page.workplace != '' %}, {% endif %}{% if page.workplace and page.workplace != '' %}{{ page.workplace }}{% endif %}</div>
             <div class="mentor-connect-dropdown mentor-connect-dropdown-no-ie sh-0 hv" id="mentor-connect-dropdown" onclick="mov()">
               <div class="button-title"> {{ site.data.t.connect_with[page.lang] }} {{ page.name }}</div>
               <div class="button-content sh-1" id="button-content">
@@ -57,7 +57,7 @@ layout: default
           <div class="long-bio-row">
             {{ page.longbio }}
           </div>
-          {% if page.education-experience %}
+          {% if page.education-experience and page.education-experience.size > 0 %}
           <div class="details-row" id="education">
             <div class="icon"> <i class="fas fa-graduation-cap"></i></div>
             <div class="title">{{ site.data.t.education_experience[page.lang] }}</div>
@@ -72,7 +72,7 @@ layout: default
           </div>
           {% endif %}
 
-          {% if page.topics %}
+          {% if page.topics and page.topics.size > 0 %}
           <div class="details-row" id="topics">
             <div class="icon"> <i class="fas fa-bookmark"></i></div>
             <div class="title">{{ site.data.t.topics_i_can_help_with[page.lang] }}</div>
@@ -82,7 +82,7 @@ layout: default
           </div>
           {% endif %}
 
-          {% if page.interests %}
+          {% if page.interests and page.interests.size > 0 %}
           <div class="details-row" id="interests">
             <div class="icon"> <i class="fas fa-heart"></i></div>
             <div class="title">{{ site.data.t.interests[page.lang] }}</div>
@@ -94,8 +94,8 @@ layout: default
 
           {% if page['social-accounts'] %}
           <div class="social-media-row">
-            {% if page['social-accounts'].facebook %}
-            <a target="_blank" href="{{ page['social-accounts'].facebook }}"> <i class="fab fa-facebook-square"></i></a>
+            {% if page['social-accounts'].snapchat %}
+            <a target="_blank" href="{{ page['social-accounts'].snapchat }}"> <i class="fab fa-snapchat-square"></i></a>
             {% endif %}
             {% if page['social-accounts'].instagram %}
             <a target="_blank" href="{{ page['social-accounts'].instagram }}"> <i class="fab fa-instagram"></i></a>
@@ -119,9 +119,9 @@ layout: default
     </div>
     {% for item in site.mentor_posts %}
     {% if item.ref == page.ref %}
-    <div class="mentor-section">
+    <div class="mentor-section" {% if item.lang == 'ar' %} dir="rtl" {% else %} dir="ltr" {% endif %} >
       <div class="mentor-card-big sh-2">
-        <div class="post-type"> <i class="fas fa-newspaper"></i><span style="text-transform: UPPERCASE">{{item.title }} </span></div>
+        <div class="post-type {{item.lang}}"> <i class="fas fa-newspaper"></i><span style="text-transform: UPPERCASE">{{item.title }} </span></div>
         <div class="mentor-post-container">
           <div class="post-content">{{ item.content | markdownify }} </div>
         </div>

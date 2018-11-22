@@ -79,11 +79,15 @@ function displaySearchResults(results, store) {
                     cardInfoSocial.append('<li>' + '<a target="_blank" href="' + obj.trim() + '">' + '<i class="fab fa-' + key + '"></i>' + '</a>' + '</li>');
             }
 
+            var cardFooter = $('<div />', { "class": "mentor-footer" });
+            cardFooter.append(cardInfoTags);
+            cardFooter.append(cardInfoSocial);
+
             cardInfo.append(cardInfoName);
             cardInfo.append(cardInfoJobTitle);
             cardInfo.append(cardInfoBio);
-            cardInfo.append(cardInfoTags);
-            cardInfo.append(cardInfoSocial);
+            cardInfo.append(cardFooter);
+            
 
             cardShadow.append(cardImage);
             cardShadow.append(cardInfo);
@@ -155,11 +159,14 @@ function displayAll(store) {
                 cardInfoSocial.append('<li>' + '<a target="_blank" href="' + obj.trim() + '">' + '<i class="fab fa-' + key + '"></i>' + '</a>' + '</li>');
         }
 
+        var cardFooter = $('<div />', { "class": "mentor-footer" });
+        cardFooter.append(cardInfoTags);
+        cardFooter.append(cardInfoSocial);
+
         cardInfo.append(cardInfoName);
         cardInfo.append(cardInfoJobTitle);
         cardInfo.append(cardInfoBio);
-        cardInfo.append(cardInfoTags);
-        cardInfo.append(cardInfoSocial);
+        cardInfo.append(cardFooter);
 
         cardShadow.append(cardImage);
         cardShadow.append(cardInfo);

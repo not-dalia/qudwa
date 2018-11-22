@@ -15,5 +15,6 @@ interests: []
 education-experience: []
 social-accounts:
   instagram: 'https://www.instagram.com/aseel/?hl=en'
+  snapchat: '@aseel'
 
 ---

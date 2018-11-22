@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Cabin:400,700|Comfortaa:400,700");
+@import url(//fonts.googleapis.com/earlyaccess/notokufiarabic.css);
 #background-line {
     left: 20%;
 }
@@ -76,7 +77,7 @@
 
 .mentor-card .mentor-bio {
     font-family: "Comfortaa", sans-serif;
-    height: 80px;
+    /* height: 80px; */
 }
 
 .mentor-card ul.mentor-tags a {
@@ -182,15 +183,6 @@
     right: 20px;
 }
 
-.mentor-card-big .post-type {
-    font-family: 'Comfortaa', sans-serif;
-    border-radius: 10px 50px 50px 0;
-}
-
-.mentor-card-big .post-type span {
-    font-family: 'Comfortaa', sans-serif;
-}
-
 .mentor-post-container .post-title {
     font-family: 'Comfortaa', sans-serif;
 }
@@ -224,7 +216,7 @@
 
 @media only screen and (max-width: 562px) {
     .mentor-card-big .mentor-image {
-        border-radius: 10px 10px 160px 0;
+        border-radius: 10px 10px 0 0;
     }
     .mentor-connect-dropdown .button-content .button-content-help:hover::after {
         left: auto;
@@ -232,9 +224,6 @@
     }
     .mentor-connect-dropdown .button-content .arrow {
         right: 5px;
-    }
-    .mentor-card-big .post-type {
-        font-family: 'Comfortaa', sans-serif;
     }
 
     .form-row .form-label {

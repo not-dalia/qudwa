@@ -86,7 +86,7 @@ body {
 
 .mentor-card .mentor-bio {
     font-family: 'Comfortaa', 'Noto Kufi Arabic', sans-serif;
-    height: 70px;
+    /* height: 70px; */
 }
 
 .mentor-card ul.mentor-tags a {
@@ -162,7 +162,7 @@ body {
 }
 
 .mentor-connect-dropdown .button-content .button-content-help:hover::after {
-    left: 0;
+    left: -180px;
     right: auto;
 }
 
@@ -186,16 +186,6 @@ body {
 
 .mentor-details .social-media-row {
     left: 20px;
-}
-
-.mentor-card-big .post-type {
-    font-family: 'Comfortaa', 'Noto Kufi Arabic', sans-serif;
-    border-radius: 50px 10px 0 50px;
-}
-
-.mentor-card-big .post-type span {
-    margin: 0 5px 0 10px;
-    font-family: 'Comfortaa', 'Noto Kufi Arabic', sans-serif;
 }
 
 .mentor-post-container .post-title {
@@ -231,7 +221,7 @@ body {
 
 @media only screen and (max-width: 562px) {
     .mentor-card-big .mentor-image {
-        border-radius: 10px 10px 0 160px;
+        border-radius: 10px 10px 0 0;
     }
     .mentor-connect-dropdown .button-content .button-content-help:hover::after {
         top: auto;
@@ -239,9 +229,6 @@ body {
     }
     .mentor-connect-dropdown .button-content .arrow {
         left: 5px;
-    }
-    .mentor-card-big .post-type {
-        font-family: 'Comfortaa', 'Noto Kufi Arabic', sans-serif;
     }
 
     .form-row .form-label {
