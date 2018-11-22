@@ -15,7 +15,7 @@ topics: []
 interests: []
 education-experience: []
 social-accounts:
-  instagram: 'http://linkedin.com/in/random/'
+  linkedin: 'http://linkedin.com/in/random/'
   twitter: 'http://linkedin.com/in/random/'
 
 ---

@@ -15,7 +15,7 @@ topics: []
 interests: []
 education-experience: []
 social-accounts:
-  instagram: 'https://www.linkedin.com/in/noufaljalaud'
+  linkedin: 'https://www.linkedin.com/in/noufaljalaud'
   twitter: 'https://twitter.com/astronoufi'
 
 ---

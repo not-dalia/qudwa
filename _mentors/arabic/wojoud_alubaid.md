@@ -16,7 +16,7 @@ interests: []
 education-experience: []
 social-accounts:
   link: 'https://wojuod.wordpress.com/about-me/'
-  instagram: 'https://www.linkedin.com/WojoudKalUbaid'
+  linkedin: 'https://www.linkedin.com/WojoudKalUbaid'
   twitter: 'https://twitter.com/Wojuod'
 
 ---

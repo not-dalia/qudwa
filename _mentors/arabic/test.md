@@ -9,7 +9,7 @@ shortbio: ''
 longbio: ''
 published: true
 image: ''
-tags: []
+tags: ['تجربة']
 topics: []
 interests: []
 education-experience: []

@@ -767,7 +767,18 @@ body {
 }
 
 .mentor-details .education-row {
-    margin-bottom: 6px;
+    margin-bottom: 15px; 
+    position: relative;
+}
+
+.mentor-details .education-row:before {
+    content: '•';
+    position: absolute;
+    top: 1px;
+    left: 8px;
+    color: #ff8a65;
+    font-size: 1.6em;
+
 }
 
 .mentor-details .education-row:last-child {

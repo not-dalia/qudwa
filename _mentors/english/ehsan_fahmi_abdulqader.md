@@ -37,7 +37,7 @@ education-experience:
     duration: ''
 social-accounts:
   link: 'https://www.e7san.me'
-  instagram: 'https://www.linkedin.com/in/ehsan-fahmi-0a8b33134/'
+  linkedin: 'https://www.linkedin.com/in/ehsan-fahmi-0a8b33134/'
   twitter: 'https://www.twitter.com/e7san'
 
 ---

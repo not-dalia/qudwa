@@ -50,7 +50,7 @@ layout: default
           {% if page.tags.size > 0 %}
           <div class="tags-row">
             {% for tag in page.tags %}
-            <a href="{{ site.baseurl }}{{ indexPage.first.url }}#tags:{{ tag }}">{{ tag | capitalize }}</a> {% endfor
+            <a href="{{ site.baseurl }}{{ indexPage.first.url }}#tags:{{ tag }}">{{ tag | UPPERCASE }}</a> {% endfor
             %}
           </div>
           {% endif %}
@@ -65,7 +65,7 @@ layout: default
             <div class="education-row">
               <div class="details"> <span class="edu-title">{{ item.title }}{% if page.lang=="ar" %}، {% else %}, {%
                   endif %} </span><span class="description">{{ item.description }}</span></div>
-              <div class="details"><span class="place">{{ item.place | capitalize }}{% if page.lang=="ar" %}، {% else
+              <div class="details"><span class="place">{{ item.place | UPPERCASE }}{% if page.lang=="ar" %}، {% else
                   %}, {% endif %} </span><span class="duration">{{ item.duration }}</span></div>
             </div>
             {% endfor %}
@@ -103,6 +103,9 @@ layout: default
             {% if page['social-accounts'].twitter %}
             <a target="_blank" href="{{ page['social-accounts'].twitter }}"> <i class="fab fa-twitter-square"></i></a>
             {% endif %}
+            {% if page['social-accounts'].linkedin %}
+            <a target="_blank" href="{{ page['social-accounts'].linkedin }}"> <i class="fab fa-linkedin"></i></a>
+            {% endif %}
             {% if page['social-accounts'].link %}
             <a target="_blank" href="{{ page['social-accounts'].link }}"> <i class="fas fa-link"></i></a>
             {% endif %}
@@ -118,7 +121,7 @@ layout: default
     {% if item.ref == page.ref %}
     <div class="mentor-section">
       <div class="mentor-card-big sh-2">
-        <div class="post-type"> <i class="fas fa-newspaper"></i><span style="text-transform: capitalize">{{item.title }} </span></div>
+        <div class="post-type"> <i class="fas fa-newspaper"></i><span style="text-transform: UPPERCASE">{{item.title }} </span></div>
         <div class="mentor-post-container">
           <div class="post-content">{{ item.content | markdownify }} </div>
         </div>

@@ -38,7 +38,7 @@ education-experience:
       web, mobile and internal systems.
     duration: ''
 social-accounts:
-  instagram: 'http://linkedin.com/in/random/'
+  linkedin: 'http://linkedin.com/in/random/'
   twitter: 'http://linkedin.com/in/random/'
 
 ---

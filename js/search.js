@@ -60,8 +60,10 @@ function displaySearchResults(results, store) {
             if (!query.tags) query.tags = [];
 
             tags.forEach(function(el, i) {
-                if (i < 2) cardInfoTags.append('<li>' + '<a onclick="javascript:addTag(\'' + el.trim() + '\')">' + el.trim() + '</a>' + '</li>');
-                if (query.tags.indexOf(el.trim()) < 0) $('#search-tags').append('<li>' + '<a onclick="javascript:toggleTag(\'' + el.trim() + '\')">' + el.trim() + '</a>' + '</li>');
+                if (el.trim() != ''){
+                    if (i < 2) cardInfoTags.append('<li>' + '<a onclick="javascript:addTag(\'' + el.trim() + '\')">' + el.trim() + '</a>' + '</li>');
+                    if (query.tags.indexOf(el.trim()) < 0) $('#search-tags').append('<li>' + '<a onclick="javascript:toggleTag(\'' + el.trim() + '\')">' + el.trim() + '</a>' + '</li>');
+                }
             });
 
             var cardInfoSocial = $('<ul />', { "class": "mentor-social" });
@@ -133,8 +135,10 @@ function displayAll(store) {
         if (!query.tags) query.tags = [];
         
         tags.forEach(function(el, i){
-            if (i < 2) cardInfoTags.append('<li>' + '<a onclick="javascript:addTag(\'' + el.trim() + '\')">' + el.trim() + '</a>' + '</li>');
-            if (query.tags.indexOf(el.trim()) < 0) $('#search-tags').append('<li>' + '<a onclick="javascript:toggleTag(\'' + el.trim() + '\')">' + el.trim() + '</a>' + '</li>');
+            if (el.trim() != ''){
+                if (i < 2) cardInfoTags.append('<li>' + '<a onclick="javascript:addTag(\'' + el.trim() + '\')">' + el.trim() + '</a>' + '</li>');
+                if (query.tags.indexOf(el.trim()) < 0) $('#search-tags').append('<li>' + '<a onclick="javascript:toggleTag(\'' + el.trim() + '\')">' + el.trim() + '</a>' + '</li>');
+            }
         });
 
 
