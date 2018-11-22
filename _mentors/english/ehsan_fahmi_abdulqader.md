@@ -5,7 +5,9 @@ categories: en
 name: Ehsan Fahmi Abdulqader
 jobtitle: Senior Software Engineer
 workplace: Tam Development LLC
-shortbio: 'I''m a senior software engineer at Tam Development LLC, the company behind many competition platforms like iRead, Israr award, and Qomrah.'
+shortbio: >-
+  I'm a senior software engineer at Tam Development LLC, the company behind many
+  competition platforms like iRead, Israr award, and Qomrah.
 longbio: >-
   I'm a senior software engineer at Tam Development LLC, the company behind many
   competition platforms like iRead, Israr award, and Qomrah.
