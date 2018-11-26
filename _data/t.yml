@@ -13,6 +13,29 @@ language:
 looking_for:
   en: "What are you looking for?"
   ar: "ما الذي تبحثين عنه؟"
+about_website:
+  en: About
+  ar: عن قدوة
+about_website_text:
+  en: >-
+    Qudwa facilitates the connection between young women and girls and professional women in STEM. In Qudwa, we aim to encourage girls to engage in different fields of work and to introduce them to the areas of work available to them.
+  ar: >-
+    قدوة هو موقع لتسهيل تواصل الفتيات من أعمار مختلفة بسيدات مهنيات في مجالات علمية مختلفة مثل العلوم والهندسة و الرياضيات و الحاسب الآلي. نهدف في قدوة الى بناء علاقة بين هؤلاء الرائدات في هذه المجالات وبين الفتيات بهدف الإجابة عن أسئلتهم وتوعيتهم وتنمية اهتمامهم في هذه التخصصات والتعرف على مستقبل كل منها.
+cookies:
+  en: Cookies
+  ar: ملفات الارتباط 
+privacy:
+  en: Privacy
+  ar: الخصوصية
+privacy_long:
+  en: Privacy Policy
+  ar: سياسة الخصوصية
+terms:
+  en: Terms
+  ar: الاستخدام
+terms_long:
+  en: Terms of Use
+  ar: سياسة الاستخدام
 education_experience:
   en: "Education and Experience"
   ar: التعليم و الخبرة العملية

@@ -1,12 +1,8 @@
 <div id="footer">
     <div id="footer-left">
         <div class="footer-section">
-            <div class="footer-title">About</div>
-            <div class="footer-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis
-                ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique,
-                tortor mauris molestie elit, et lacinia ipsum quam nec dui. Quisque nec mauris sit amet elit iaculis pretium
-                sit amet quis magna. Aenean velit odio, elementum in tempus ut, vehicula eu diam. Pellentesque rhoncus aliquam
-                mattis.
+            <div class="footer-title">{{ site.data.t.about_website[page.lang] }}</div>
+            <div class="footer-text">{{ site.data.t.about_website_text[page.lang] }}
             </div>
         </div>
     </div>
@@ -14,7 +10,7 @@
         <div class="footer-section">
             <div class="right-container">
                 <div class="footer-title">{{ site.data.t.could_not_find_help[page.lang] }}</div>
-                <a class="footer-button-big" href="{{ site.baseurl}}/{{ page.lang }}/let-us-help">{{ site.data.t.let_us_help[page.lang] }}</a><br/><a class="footer-button-big" href="{{ site.baseurl}}/{{ page.lang }}/recommend-mentor">{{ site.data.t.recommend_mentor[page.lang] }}</a>
+                <a class="footer-button-big" href="{{ site.baseurl}}/{{ page.lang }}/let-us-help">{{ site.data.t.let_us_help[page.lang] }}</a> <a class="footer-button-big" href="{{ site.baseurl}}/{{ page.lang }}/recommend-mentor">{{ site.data.t.recommend_mentor[page.lang] }}</a>
             </div>
         </div>
     </div>

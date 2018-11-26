@@ -122,19 +122,20 @@ body {
 #footer-small ul li{
     list-style: none;
     margin: 0;
-    transition: all .3s ease;
-    color: #a3bcc8;
     font-size: 0.85em;
     display: inline-block;
     line-height: 50px;
     padding: 0 15px;
     text-decoration: none;
     white-space: nowrap;
-    display: inline-block;
+    color: #a3bcc8;
 }
 
 #footer-small ul li a{
     cursor: pointer;
+    transition: all .3s ease;
+    color: #a3bcc8;
+    text-decoration: none;
 }
 
 #footer-small ul li a:hover{
@@ -185,6 +186,16 @@ body {
     flex: 1 1 auto;
     display: flex;
     flex-direction: column;
+}
+
+.info-pages .post-content p, .info-pages .post-content ul, .info-pages .post-content li {
+    margin: 10px 3px;
+    font-size: 1.0rem;
+    line-height: 2em;
+}
+
+.info-pages .post-content ul {
+    padding: 0px 5px;
 }
 
 #search {
