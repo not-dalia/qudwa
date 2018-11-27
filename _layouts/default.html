@@ -1,18 +1,20 @@
 <!DOCTYPE HTML>
-<html lang="{{ page.lang }}" {% if page.lang=="ar" %}dir="rtl" {% endif %}>
+{% if page.lang %} {% assign pagelang = page.lang %} {% else %}  {% assign pagelang = 'en' %} {% endif %}
+<html lang="{{ pagelang }}" {% if pagelang=="ar" %}dir="rtl" {% endif %}>
 {% include head.html %}
 
 <body>
     <div class="container">
 
-        {% include header.html %}
+        {% include header.html pagelang=pagelang %}
 
             {{ content }}
 
-        {% include footer-small.html %}
+        {% include footer-small.html pagelang=pagelang %}
 
     </div>
-    <script src="{{ site.baseurl }}/js/{{ page.lang }}/index.js"></script>
+    <script src="{{ site.baseurl }}/js/{{ pagelang }}/index.js"></script>
+    
 
 </body>
 </html>

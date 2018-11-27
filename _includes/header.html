@@ -2,7 +2,7 @@
     <a href="{{site.baseurl}}/">
       <div class="logo-img">
           <!-- <i class="fas fa-user-circle"> </i> -->
-        <img src="{{site.baseurl}}/assets/images/logo{{page.lang}}.svg" alt="Qudwa" title="Qudwa" style="display: inline-block;
+        <img src="{{site.baseurl}}/assets/images/logo{{pagelang}}.svg" alt="Qudwa" title="Qudwa" style="display: inline-block;
         height: 80px;
         padding: 10px;"/>
       </div>
@@ -18,7 +18,7 @@
 
       {% assign mentors=site.mentors | where:"ref", page.ref | sort: 'lang' %}
         {% for mentor in mentors %}
-          {% if page.lang == mentor.lang %}
+          {% if pagelang == mentor.lang %}
             <a class="{{ mentor.lang }} selected" >{{ site.data.t.language[mentor.lang] }}</a>
           {% else %}
             {%if mentor.name and mentor.name!='' %}
@@ -32,7 +32,7 @@
         
         {% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
         {% for p in pages %}
-          {% if page.lang == p.lang %}
+          {% if pagelang == p.lang %}
             <a class="{{ p.lang }} selected" >{{ site.data.t.language[p.lang] }}</a>
           {% else %}
             <a class="{{ p.lang }}" onclick="javascript:languageSelect('{{ p.url | prepend: site.baseurl }}', '{{p.lang}}');">{{ site.data.t.language[p.lang] }}</a>
