@@ -192,6 +192,7 @@ body {
     margin: 10px 3px;
     font-size: 1.0rem;
     line-height: 2em;
+    text-align: justify;
 }
 
 .info-pages .post-content ul {

@@ -24,6 +24,7 @@ var idx = lunr(function () {
 function displaySearchResults(results, store) {
     var searchResults = $('#mentor-list');
     searchResults.empty();
+    var addedTags = [];
 
     if (results.length) { // Are there any results?
         var appendString = '';
@@ -58,11 +59,13 @@ function displaySearchResults(results, store) {
             var tags = item.tags.split(',');
             var query = getQueryVariable();
             if (!query.tags) query.tags = [];
-
             tags.forEach(function(el, i) {
                 if (el.trim() != ''){
                     if (i < 2) cardInfoTags.append('<li>' + '<a onclick="javascript:addTag(\'' + el.trim() + '\')">' + el.trim() + '</a>' + '</li>');
-                    if (query.tags.indexOf(el.trim()) < 0) $('#search-tags').append('<li>' + '<a onclick="javascript:toggleTag(\'' + el.trim() + '\')">' + el.trim() + '</a>' + '</li>');
+                    if ((query.tags.indexOf(el.trim()) < 0) && addedTags.indexOf(el.trim()) < 0) {
+                        addedTags.push(el.trim());
+                        $('#search-tags').append('<li>' + '<a onclick="javascript:toggleTag(\'' + el.trim() + '\')">' + el.trim() + '</a>' + '</li>');
+                    }
                 }
             });
 
@@ -108,6 +111,7 @@ function displayAll(store) {
     searchResults.empty();
     var appendString = '';
     $('#search-tags').empty();
+    var addedTags = [];
 
     for (var i = 0; i < store.length; i++) {  // Iterate over the results
         var item = store[i];
@@ -137,9 +141,9 @@ function displayAll(store) {
         var tags = item.tags.split(',');
         var query = getQueryVariable();
         if (!query.tags) query.tags = [];
-        
         tags.forEach(function(el, i){
-            if (el.trim() != ''){
+            if ((el.trim() != '') && (addedTags.indexOf(el.trim()) < 0)){
+                addedTags.push(el.trim());
                 if (i < 2) cardInfoTags.append('<li>' + '<a onclick="javascript:addTag(\'' + el.trim() + '\')">' + el.trim() + '</a>' + '</li>');
                 if (query.tags.indexOf(el.trim()) < 0) $('#search-tags').append('<li>' + '<a onclick="javascript:toggleTag(\'' + el.trim() + '\')">' + el.trim() + '</a>' + '</li>');
             }
