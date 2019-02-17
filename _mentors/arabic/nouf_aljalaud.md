@@ -9,7 +9,7 @@ shortbio: ''
 longbio: ''
 published: true
 image: >-
-  https://raw.githubusercontent.com/not-dalia/qudwa/gh-pages/media/15428782292191542878226296_Screen%20Shot%202018-11-22%20at%2012.16.49.png
+  https://raw.githubusercontent.com/not-dalia/qudwa/gh-pages/media/15503869127771550386911159_Planon%20Space%20and%20Workplace%20Management.91cac35b3ecfae606eff33c885847ca3.jpg
 tags: []
 topics: []
 interests: []
