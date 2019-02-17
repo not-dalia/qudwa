@@ -4,7 +4,7 @@ lang: en
 categories: en
 name: Sara Ahmed
 jobtitle: UX Designer
-workplace: Nahdi Medical Company
+workplace: X Company
 shortbio: 'I am UX Specialist, which is a very new an exciting work area to be in.'
 longbio: >-
   I am UX Specialist, which is a very new an exciting work area to be in. User
@@ -19,7 +19,7 @@ longbio: >-
   field.
 published: true
 image: >-
-  https://raw.githubusercontent.com/not-dalia/qudwa/gh-pages/media/15428750275071542875025511_532888.jpg
+  https://raw.githubusercontent.com/not-dalia/qudwa/gh-pages/media/15503791425061550379141202_532888.jpg
 tags:
   - UX
   - HCI
