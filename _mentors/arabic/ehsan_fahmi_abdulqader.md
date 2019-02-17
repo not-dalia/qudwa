@@ -9,7 +9,7 @@ shortbio: ''
 longbio: ''
 published: true
 image: >-
-  https://raw.githubusercontent.com/not-dalia/qudwa/gh-pages/media/15428756559851542875653064_Screen%20Shot%202018-11-22%20at%2011.33.37.png
+  https://raw.githubusercontent.com/not-dalia/qudwa/gh-pages/media/15503793909171550379388078_saudi-arabia-women.jpg
 tags: []
 topics: []
 interests: []
