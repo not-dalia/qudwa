@@ -3,9 +3,12 @@ ref: nouf_aljalaud
 lang: en
 categories: en
 name: Nouf AlSaleh
-jobtitle: Aviation Computer Support Group Supervisor
-workplace: Saudi Aramco
-shortbio: Self made aviator who is never the person was yesterday.
+jobtitle: xxxxxxxxx
+workplace: XX
+shortbio: >-
+  Erat lectus auctor diam ligula morbi amet eleifend fames, aenean magna
+  volutpat ut potenti mauris rhoncus quam, sociosqu tincidunt gravida porttitor
+  suscipit aliquam iaculis ipsum in donec ac suspendisse feugiat fermentum.
 longbio: >-
   Nouf Al-Jalaud is an Engineer and Analyst who works at Saudi Aramco Aviation
   Department where she enthusiastically supports the mission of the department
@@ -18,7 +21,7 @@ longbio: >-
   Bin Fahd University.
 published: true
 image: >-
-  https://raw.githubusercontent.com/not-dalia/qudwa/gh-pages/media/15428782292191542878226296_Screen%20Shot%202018-11-22%20at%2012.16.49.png
+  https://raw.githubusercontent.com/not-dalia/qudwa/gh-pages/media/15503869127771550386911159_Planon%20Space%20and%20Workplace%20Management.91cac35b3ecfae606eff33c885847ca3.jpg
 tags:
   - Technology
   - Engineering
