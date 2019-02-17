@@ -2,7 +2,7 @@
 ref: ehsan_fahmi_abdulqader
 lang: en
 categories: en
-name: Ehsan Fahmi Abdulqader
+name: Noura Ahmed
 jobtitle: Senior Software Engineer
 workplace: Tam Development LLC
 shortbio: >-
@@ -24,7 +24,7 @@ longbio: >-
   4. Converting these solutions and ideas to applications.
 published: true
 image: >-
-  https://raw.githubusercontent.com/not-dalia/qudwa/gh-pages/media/15428756559851542875653064_Screen%20Shot%202018-11-22%20at%2011.33.37.png
+  https://raw.githubusercontent.com/not-dalia/qudwa/gh-pages/media/15503793909171550379388078_saudi-arabia-women.jpg
 tags:
   - Engineering
   - Technology
