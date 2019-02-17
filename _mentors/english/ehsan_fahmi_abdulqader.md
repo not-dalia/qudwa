@@ -2,7 +2,7 @@
 ref: ehsan_fahmi_abdulqader
 lang: en
 categories: en
-name: Noura Ahmed
+name: Noura Abdullah
 jobtitle: Senior Software Engineer
 workplace: Tam Development LLC
 shortbio: >-
