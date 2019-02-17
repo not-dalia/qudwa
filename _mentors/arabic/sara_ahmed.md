@@ -9,7 +9,7 @@ shortbio: ''
 longbio: ''
 published: true
 image: >-
-  https://raw.githubusercontent.com/not-dalia/qudwa/gh-pages/media/15428750275071542875025511_532888.jpg
+  https://raw.githubusercontent.com/not-dalia/qudwa/gh-pages/media/15503791425061550379141202_532888.jpg
 tags: []
 topics: []
 interests: []
