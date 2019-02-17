@@ -2,7 +2,7 @@
 ref: nouf_aljalaud
 lang: en
 categories: en
-name: Nouf Aljalaud
+name: Nouf AlAhmed
 jobtitle: Aviation Computer Support Group Supervisor
 workplace: Saudi Aramco
 shortbio: Self made aviator who is never the person was yesterday.
