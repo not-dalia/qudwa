@@ -4,10 +4,12 @@ lang: en
 categories: en
 name: Noura Abdullah
 jobtitle: Senior Software Engineer
-workplace: Tam Development LLC
+workplace: YY
 shortbio: >-
-  I'm a senior software engineer at Tam Development LLC, the company behind many
-  competition platforms like iRead, Israr award, and Qomrah.
+  Ullamcorper orci purus sodales velit vel velit libero, sollicitudin maecenas
+  elementum ultricies malesuada aenean nunc, integer enim nunc neque mi netus
+  senectus condimentum semper posuere morbi sodales sollicitudin pretium
+  ultrices convallis platea.
 longbio: >-
   I'm a senior software engineer at Tam Development LLC, the company behind many
   competition platforms like iRead, Israr award, and Qomrah.
