@@ -2,7 +2,7 @@
 ref: ragad_allwihan
 lang: ar
 categories: ar
-name: رغد محمد اللويحان
+name: رغد اللويحان
 jobtitle: أستاذ مساعد في علوم الحاسبات
 workplace: جامعة الملك سعود بن عبدالعزيز للعلوم الصحية
 shortbio: >-
