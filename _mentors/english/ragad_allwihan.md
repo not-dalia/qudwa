@@ -2,7 +2,7 @@
 ref: ragad_allwihan
 lang: en
 categories: en
-name: Ragad Mohammad Allwihan
+name: Ragad Allwihan
 jobtitle: Assistant Professor of Computer Science
 workplace: King Saud Bin AbdulAziz University for Health Science
 shortbio: >-
