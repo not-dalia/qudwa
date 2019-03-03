@@ -12,7 +12,8 @@ longbio: >-
 
   I Enjoy challenges, my ultimate goal is to be today better than yesterday.
 published: true
-image: ''
+image: >-
+  https://raw.githubusercontent.com/not-dalia/qudwa/gh-pages/media/15515961160551551596113103_logo.jpg
 tags:
   - software engineer
   - android
