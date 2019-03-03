@@ -14,9 +14,9 @@ longbio: >-
 published: true
 image: ''
 tags:
-  - Software Engineer
+  - software engineer
   - android
-  - developing
+  - computer science
 topics:
   - android development
   - spring boot
