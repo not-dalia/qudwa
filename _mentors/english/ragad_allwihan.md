@@ -12,7 +12,8 @@ longbio: >-
   Assistant Professor of Computer Science (Human Computer Interaction)
   Interested in Scientific Research and Social Works.
 published: true
-image: ''
+image: >-
+  https://raw.githubusercontent.com/not-dalia/qudwa/gh-pages/media/15515962074161551596205446_logo.jpg
 tags:
   - computer science
   - information technology
