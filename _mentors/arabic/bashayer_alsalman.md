@@ -10,7 +10,8 @@ longbio: |-
   مطورة برامج للهواتف الذكية مهتمة في الأمن.
   أنا استمتع بالتحديات ، وهدفي النهائي هو أن أكون اليوم أفضل من الأمس.
 published: true
-image: ''
+image: >-
+  https://raw.githubusercontent.com/not-dalia/qudwa/gh-pages/media/15515961160551551596113103_logo.jpg
 tags:
   - مهندسة برمجيات
   - اندرويد
