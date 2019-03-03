@@ -12,7 +12,8 @@ longbio: >-
   أستاذ مساعد لعلوم الحسابات (تخصص هندسة التفاعل البشري الحاسوبي) مهتمة بالبحث
   العلمي والعمل الاجتماعي
 published: true
-image: ''
+image: >-
+  https://raw.githubusercontent.com/not-dalia/qudwa/gh-pages/media/15515962074161551596205446_logo.jpg
 tags:
   - علوم الحاسب
   - تقنية المعلومات
