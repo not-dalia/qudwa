@@ -14,9 +14,9 @@ longbio: >-
 published: true
 image: ''
 tags:
-  - Computer Science
-  - Information Technology
-  - Human Computer Interaction
+  - computer science
+  - information technology
+  - human computer interaction
 topics:
   - applying to university
   - choose a major
