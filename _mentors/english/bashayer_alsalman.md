@@ -15,6 +15,8 @@ published: true
 image: ''
 tags:
   - Software Engineer
+  - android
+  - developing
 topics:
   - android development
   - spring boot
