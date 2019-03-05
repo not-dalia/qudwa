@@ -13,7 +13,7 @@ longbio: >-
   العلمي والعمل الاجتماعي
 published: true
 image: >-
-  https://raw.githubusercontent.com/not-dalia/qudwa/gh-pages/media/15515962074161551596205446_logo.jpg
+  https://raw.githubusercontent.com/not-dalia/qudwa/gh-pages/media/15517774056891551777404397_logoPurple.jpg
 tags:
   - علوم الحاسب
   - تقنية المعلومات
