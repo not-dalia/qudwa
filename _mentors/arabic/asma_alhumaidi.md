@@ -10,7 +10,8 @@ longbio: >-
   عملت كمديرة مشروع لمدة عامين ، والآن أعمل كمطورة ، بشكل رئيسي وظيفتي هي
   التركيز على تطوير الويب وبناء الخدمات
 published: true
-image: ''
+image: >-
+  https://raw.githubusercontent.com/not-dalia/qudwa/gh-pages/media/15517704287861551770427861_logo.jpg
 tags:
   - تطوير
   - دمج
