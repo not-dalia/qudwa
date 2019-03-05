@@ -2,7 +2,7 @@
 ref: asma_alhumaidi
 lang: ar
 categories: ar
-name: ''
+name: أسماء الحميدي المطيري
 jobtitle: مطورة
 workplace: ''
 shortbio: شغوفة بتعلم مفاهيم جديدة و أحب القراءة
