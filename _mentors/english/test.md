@@ -2,8 +2,8 @@
 ref: test
 lang: en
 categories: en
-name: ''
-jobtitle: ''
+name: test
+jobtitle: xxxxxxxxx
 workplace: ''
 shortbio: ''
 longbio: ''
