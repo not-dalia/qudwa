@@ -11,7 +11,7 @@ longbio: >-
   my job is focus on web development and building microservices.
 published: true
 image: >-
-  https://raw.githubusercontent.com/not-dalia/qudwa/gh-pages/media/15517704287861551770427861_logo.jpg
+  https://raw.githubusercontent.com/not-dalia/qudwa/gh-pages/media/15517732581151551773256763_Color.jpg
 tags:
   - developer
   - integration
