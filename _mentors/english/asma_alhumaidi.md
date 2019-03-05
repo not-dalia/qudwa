@@ -10,7 +10,8 @@ longbio: >-
   I worked as project manager for 2 years, and now I work as Developer, mainly
   my job is focus on web development and building microservices.
 published: true
-image: ''
+image: >-
+  https://raw.githubusercontent.com/not-dalia/qudwa/gh-pages/media/15517704287861551770427861_logo.jpg
 tags:
   - developer
   - integration
