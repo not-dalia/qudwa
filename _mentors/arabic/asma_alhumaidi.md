@@ -11,7 +11,7 @@ longbio: >-
   التركيز على تطوير الويب وبناء الخدمات
 published: true
 image: >-
-  https://raw.githubusercontent.com/not-dalia/qudwa/gh-pages/media/15517732581151551773256763_Color.jpg
+  https://raw.githubusercontent.com/not-dalia/qudwa/gh-pages/media/15517735574141551773556150_logo.jpg
 tags:
   - تطوير
   - دمج
