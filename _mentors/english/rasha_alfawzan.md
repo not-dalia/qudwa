@@ -22,7 +22,7 @@ image: >-
 tags:
   - information technology
   - project management
-  - data & process analytics
+  - computer science
 topics:
   - university & job applications
 interests:
