@@ -35,6 +35,10 @@ education-experience:
     place: جامعة نوتنقهام
     description: ''
     duration: ''
+  - title: درجة البكالوريس
+    place: جامعة الملك عبدالعزيز
+    description: ''
+    duration: ''
 social-accounts:
   link: WWW.HCIARABIA.COM
   twitter: 'https://twitter.com/HCIARABIA'
