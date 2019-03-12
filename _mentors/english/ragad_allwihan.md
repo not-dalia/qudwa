@@ -15,7 +15,6 @@ published: true
 image: >-
   https://raw.githubusercontent.com/not-dalia/qudwa/gh-pages/media/15517774056891551777404397_logoPurple.jpg
 tags:
-  - computer science
   - information technology
   - human computer interaction
 topics:
