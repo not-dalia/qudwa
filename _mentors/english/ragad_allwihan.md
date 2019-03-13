@@ -4,7 +4,7 @@ lang: en
 categories: en
 name: Ragad Allwihan
 jobtitle: Assistant Professor of Computer Science
-workplace: King Saud Bin AbdulAziz University for Health Science
+workplace: KSAU-HS
 shortbio: >-
   Assistant Professor of Computer Science (Human Computer Interaction)
   Interested in Scientific Research and Social Works.
@@ -15,7 +15,6 @@ published: true
 image: >-
   https://raw.githubusercontent.com/not-dalia/qudwa/gh-pages/media/15517774056891551777404397_logoPurple.jpg
 tags:
-  - computer science
   - information technology
   - human computer interaction
 topics:

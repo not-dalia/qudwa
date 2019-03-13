@@ -2,18 +2,51 @@
 ref: majd_abdulghani
 lang: ar
 categories: ar
-name: ''
-jobtitle: ''
-workplace: ''
-shortbio: ''
-longbio: ''
+name: مجد عبدالغني
+jobtitle: فني أبحاث
+workplace: Howard Hughes Medical Institute | University of Michigan
+shortbio: >-
+  عالمة وراثة في مختبر تشيونغ بجامعة ميشيغان. مهتمة بدور الحمض النووي RNA في
+  تنظيم التعبير الجيني. أهدافي الطويلة الأجل هي تقديم مساهمات كبيرة في مجال علم
+  الوراثة وتخفيف التباين العنصري والجنسي في مجالات العلوم والتكنولوجيا والهندسة
+  والرياضيات.
+longbio: >-
+  أخصائية علم الوراثة في مختبر الأبحاث بجامعة ميشيغان. أكملت شهادة الماجستير في
+  علم الوراثة وعلم الجينوم في جامعة ولاية أيوا بالولايات المتحدة الأمريكية،
+  وسأبدأ درجة الدكتوراه في علم الأورام من جامعة أكسفورد في أكتوبر 2019 كأول
+  سعودي  حاصل على Rhodes Scholar. أمارس البحوث بنشاط منذ حوالي ثلاث سنوات، وقد
+  كتبت ثلاث ورقات علمية. خلال دراستي الجامعية في المملكة العربية السعودية ، لم
+  أكن أتعلم الكثير عن الفرص البحثية ولا أتعرض لها. من خلال المشاركة في هذا
+  المشروع ، آمل أن أزيد عدد الشابات السعوديات العاملات في البحث العلمي.
 published: true
 image: >-
   https://raw.githubusercontent.com/not-dalia/qudwa/gh-pages/media/15515915160851551591512053_Screenshot%202019-03-03%20at%2008.38.13.png
-tags: []
-topics: []
-interests: []
-education-experience: []
+tags:
+  - الجينات
+  - البيولوجيا الجزيئية
+  - الجينوم
+topics:
+  - التقديم على الجامعات و المنح الدراسية
+  - التقديم للوظائف
+  - التحدث عن الأبحاث و العلوم
+interests:
+  - القراءة
+  - ركوب الخيل
+  - اللغات
+  - كرة المضرب
+education-experience:
+  - title: شهادة الماجستير
+    place: 'Iowa State University, USA'
+    description: علم الوراثة و علم الجينوم
+    duration: ٢٠١٦ - ٢٠١٨
+  - title: شهادة البكالوريس
+    place: جامعة الملك سعود
+    description: علم المختبرات الطبية
+    duration: ٢٠١١ - ٢٠١٦
+  - title: فني أبحاث
+    place: Howard Hughes Medical Institute | University of Michigan
+    description: دراسة دور الحمض النوويRNA في تنظيم التعبير الجيني
+    duration: ٢٠١٨ - الوقت الحالي
 social-accounts:
   twitter: 'https://twitter.com/12majd12'
 

@@ -3,8 +3,8 @@ ref: rasha_alfawzan
 lang: ar
 categories: ar
 name: رشا الفوزان
-jobtitle: ''
-workplace: ''
+jobtitle: مهندس تحليلات
+workplace: جينيرال الكتريك
 shortbio: >-
   متخصصه في تقنية المعلومات و الروبوتات (RPA) وإدارة مشاريع تقنية المعلومات
   وتحليلات البيانات.

@@ -29,8 +29,8 @@ tags:
   - genome
 topics:
   - Applying to universities and scholarships
-  - Job applications
-  - Talking about research and science (especially biology)
+  - job applications
+  - talking about research and science (especially biology)
 interests:
   - Reading
   - Racquetball
