@@ -23,7 +23,13 @@ about_website_text:
     قدوة هو موقع لتسهيل تواصل الفتيات من أعمار مختلفة بسيدات مهنيات في مجالات علمية مختلفة مثل العلوم والهندسة و الرياضيات و الحاسب الآلي. نهدف في قدوة الى بناء علاقة بين هؤلاء الرائدات في هذه المجالات وبين الفتيات بهدف الإجابة عن أسئلتهم وتوعيتهم وتنمية اهتمامهم في هذه التخصصات والتعرف على مستقبل كل منها.
 cookies:
   en: Cookies
-  ar: ملفات الارتباط 
+  ar: ملفات الارتباط
+research:
+  en: "Research"
+  ar: "السياسة البحثية" 
+research_long:
+  en: "Research Policy"
+  ar: "السياسة البحثية" 
 privacy:
   en: Privacy
   ar: الخصوصية
@@ -141,6 +147,9 @@ connect_through:
 snapchat:
   en: "Snapchat"
   ar: "سنابشات"
+facebook:
+  en: "Facebook"
+  ar: "فيسبوك"
 twitter:
   en: "Twitter"
   ar: "تويتر"
@@ -180,7 +189,70 @@ add_another_profile:
 back_to_main:
   en: "← Back to main page"
   ar: "→ العودة الى الصفحة الرئيسية"
-months:
+back_to_main_2:
+  en: "Back to main page"
+  ar: "العودة الى الصفحة الرئيسية"
+close:
+  en: "Close"
+  ar: "إغلاق"
+something_wrong_submit:
+  en: "Something went wrong. Please try again."
+  ar: "لم يتم إرسال الطلب بنجاح. الرجاء المحاولة مرة اخرى."
+thank_you_submit:
+  en: "Thank you for submitting. "
+  ar: "تم إرسال الطلب. شكرا لكم. "
+will_contact_submit:
+  en: "We will contact you soon."
+  ar: "سوف يتم التواصل معكم قريبا."
+cookie_consent: 
+  en: >-
+    This website uses cookies to help us understand how you use the site.
+  
+    This is for research purposes and to provide a better experience.
+  ar: " نستخدم في قدوة ملفات الارتباط او الكوكيز لنتمكن من فهم كيفية استخدامك للموقع. نقوم باستعمال هذه المعلومات لأغراض بحثية ولأجل توفير تجربة أفضل لمستخدمي الموقع."
+read_more:
+  en: "Learn more →"
+  ar: "إقرأ المزيد ←"
+allow_cookies:
+  en: "Allow all cookies"
+  ar: "السماح لجميع ملفات الارتباط"
+cookie_settings:
+  en: "Cookie settings"
+  ar: "اعدادات ملفات الارتباط"
+save_cookies:
+  en: "Save settings"
+  ar: "حفظ الاعدادات"
+necessary:
+  en: "Necessary"
+  ar: "ملفات ارتباط ضرورية"
+statistics:
+  en: "Statistics"
+  ar: "ملفات ارتباط احصائية"
+personalisation:
+  en: "Personalisation"
+  ar: "ملفات ارتباط تخصيصية"
+necessary_desc:
+  en: >-
+    Necessary cookies make Qudwa usable by enabling basic necessary functions. These cookies save your cookie consent details and language selection. 
+  ar: >-
+    ملفات الارتباط الضرورية تسمح لقدوة بالعمل بشكل صحيح. تحفظ هذه الملفات اعدادات اللغة وملفات الارتباط الفعالة.
+statistics_desc:
+  en: >-
+    Statistic cookies help Qudwa understand how visitors interact with the website by collecting and reporting information anonymously.
+  ar: >-
+    ملفات الارتباط الاحصائية تساعد قدوة على فهم كيفية استخدام الزوار للموقع عن طريق جمع المعلومات بشكل يحافظ على سرية وخصوصية الزائر
+personalisation_desc:
+  en: >-
+    Personalisation cookies help Qudwa give you a better experience by understanding your interests better. This information is used in an anonymous form when published as research. When you submit a form to Qudwa, your email will be linked to your browsing data to personalize your experience. 
+  ar: >-
+    تساعد هذه الملفات قدوة على تقديم تجربة افضل لك عن طريق فهم اهتماماتك وما تبحث عنه. عند ارسال اي طلب يحتوي بريدك الالكتروني على قدوة، سيرتبط بريدك الالكتروني بمعلومات التصفح على الموقع لتحصل على تجربة تتناسب مع اهتماماتك الشخصية.
+agree_research:
+  en: "I understand this service is provided by Open Lab as a research project and agree to the "
+  ar: "اعلم ان هذه الخدمة مقدمة من Open Lab, Newcastle University كجزء من مشروع بحثي واوافق على "
+i_accept:
+  en: "I accept the "
+  ar: "اوافق على "
+months: 
   en: 
     - January
     - February

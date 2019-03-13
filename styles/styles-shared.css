@@ -12,9 +12,9 @@ html{
 }
 
 .sh-1 {
-    -webkit-box-shadow: 0px 4px 20px 1px rgba(0, 0, 0, 0.2);
-    -moz-box-shadow: 0px 4px 20px 1px rgba(0, 0, 0, 0.2);
-    box-shadow: 0px 4px 20px 1px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.1);
 }
 
 .sh-2 {
@@ -356,6 +356,7 @@ body {
 
 .mentor-card {
     /* height: 420px; */
+    min-height: 420px;
     padding: 20px;
     display: inline-block;
     align-self: stretch;
@@ -367,19 +368,27 @@ body {
     height: 100%;
     width: 280px;
     border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
 }
 
 .mentor-card .mentor-content .mentor-info{
     position: relative;
     height: 100%;
-    margin-bottom: 70px;
+    flex: 1;
+    min-height: 160px;
+    overflow: hidden;
+    /* margin-bottom: 70px; */
+    /* pointer-events: none; */
 }
 
 .mentor-card .mentor-content .mentor-footer{
-    position: absolute;
+    /* position: absolute; */
     bottom: 0;
     left: 0;
     right: 0;
+    justify-self: flex-end;
 }
 
 .mentor-card .mentor-image {
@@ -447,6 +456,7 @@ body {
     font-size: 0.8em;
     text-decoration: none;
     cursor: pointer;
+    pointer-events: auto;
 }
 
 .mentor-card ul.mentor-tags a:hover {
@@ -472,6 +482,7 @@ body {
     color: rgb(255, 138, 101);
     font-size: 22px;
     text-decoration: none;
+    pointer-events: auto;
 }
 
 .mentor-card ul.mentor-social a:hover {
@@ -592,12 +603,14 @@ body {
     /* font-family: "Comfortaa", sans-serif; */
     color: rgba(84, 110, 122, 1);
     text-decoration: none;
+    pointer-events: auto;
 }
 
 .mentor-info .mentor-title {
     /* font-family: "Cabin", sans-serif; */
     /* font-size: 1em; */
     color: rgba(77, 182, 172, 1);
+    pointer-events: auto;
 }
 
 .mentor-info .mentor-connect-dropdown {
@@ -804,8 +817,6 @@ body {
 .mentor-details .education-row:before {
     content: '•';
     position: absolute;
-    top: 1px;
-    left: 8px;
     color: #ff8a65;
     font-size: 1.6em;
 
@@ -943,6 +954,16 @@ body {
     min-width: 280px;
 }
 
+form label.error {
+    font-size: 0.8em;
+    color: crimson !important;
+    width: 100%;
+}
+
+form input.error, form select.error, form textarea.error {
+    border-color: crimson !important;
+}
+
 .form-group {
     padding: 20px;
     padding-bottom: 0;
@@ -959,7 +980,6 @@ body {
 }
 
 .form-row .description {
-    font-style: italic;
     color: rgba(255, 138, 101, 1);
     width: 100%;
 }
@@ -987,12 +1007,14 @@ body {
 
 .form-row input[type="text"],
 .form-row input[type="email"],
+.form-row input[type="url"],
 .form-row textarea {
     width: 100%;
 }
 
 .form-row input[type="text"],
 .form-row input[type="email"],
+.form-row input[type="url"],
 .form-row input[type="number"],
 .form-row textarea,
 .form-row select {
@@ -1055,6 +1077,7 @@ body {
     display: block;
     text-decoration: none;
     transition: background-color 0.2s ease-in-out;
+    cursor: pointer;
 }
 
 .mentor-form-button .form-button:hover {
@@ -1101,6 +1124,142 @@ a#add_another_profile:hover{
     max-width: 550px;
     margin: 0 auto; 
     margin-bottom: 1em;
+}
+
+.blocker{
+    z-index: 101 !important;
+}
+
+.modal {
+    border-radius: 10px;
+    text-align: center;
+    color: rgba(84, 110, 122, 1);
+    line-height: 1.5em;
+}
+
+.modal a{
+    color: lightseagreen;
+}
+
+.modal.cookies a:hover{
+    color: darkcyan;
+}
+
+.modal .error{
+    color: crimson;
+    font-size: 50px;
+}
+
+.modal .success{
+    color: green;
+    font-size: 50px;
+}
+
+.modal .button {
+    text-align: center;
+    color: #fff;
+    padding: 15px 20px;
+    background-color: #ff8a65;
+    border: 1px solid #fff;
+    margin: 5px;
+    border-radius: 10px;
+    /* font-family: "Cabin", sans-serif; */
+    font-size: 0.9em;
+    font-weight: bold;
+    display: block;
+    text-decoration: none;
+    transition: background-color 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+#cookie-accept{
+    text-align: center;
+    color: #fff;
+    padding: 15px 20px;
+    background-color: lightseagreen;
+    border: 1px solid #fff;
+    margin: 5px;
+    border-radius: 10px;
+    /* font-family: "Cabin", sans-serif; */
+    font-size: 0.9em;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.1s ease-in-out;
+    cursor: pointer;
+    display: inline-block;
+}
+
+#cookie-accept:hover{
+    background-color: darkcyan;
+}
+
+#cookie-save{
+    text-align: center;
+    color: #fff;
+    padding: 15px 20px;
+    background-color: #777;
+    border: 1px solid #fff;
+    margin: 5px;
+    border-radius: 10px;
+    /* font-family: "Cabin", sans-serif; */
+    font-size: 0.9em;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.1s ease-in-out;
+    cursor: pointer;
+    display: inline-block;
+}
+
+#cookie-save:hover{
+    background-color: darkcyan;
+}
+
+#cookie-edit {
+    text-align: center;
+    color: #666;
+    padding: 5px 5px;
+    border-bottom: 1px dotted #444;
+    margin: 5px;
+    /* font-family: "Cabin", sans-serif; */
+    font-size: 0.9em;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.1s ease-in-out;
+    cursor: pointer;
+    display: inline-block;
+
+}
+
+#cookie-edit:hover{
+    color: darkcyan;
+    padding-bottom: 2px;
+}
+
+#cookie-settings-modal table{
+    border-collapse: collapse;
+    margin-bottom: 10px;
+}
+
+#cookie-settings-modal td {
+    text-align: left;
+    margin-bottom: 10px;
+    border: 1px dashed #aaa;
+    padding: 5px;
+    font-size: 0.9em;
+    vertical-align: top;
+    color: #68808c;
+}
+
+#cookie-settings-modal td:nth-child(1) {  
+    white-space: nowrap;
+}
+
+.form-consent label.error{
+    display: block;
+}
+
+.form-consent a{
+    color: rgba(77, 182, 172, 1);
 }
 
 @media only screen and (max-width: 562px) {

@@ -2,15 +2,17 @@ function popoulateMentor() {
   var params = window.location.search;
   var searchParams = new JURL.URLSearchParams(params);
   console.log(searchParams.get("mentor"));
-  var currentMentor;
+  var currentMentor, mentorRef;
   for (var i = 0; i < mentors.length; i++) {
     if (searchParams.get("mentor") == mentors[i].ref) {
+      mentorRef = mentors[i].ref;
       currentMentor = mentors[i];
       break;
     }
   }
 
   if (currentMentor) {
+    $('input[name=mentor]').val(mentorRef);
     document.querySelector("#mentor-name").innerHTML = currentMentor.title;
     document.querySelector("#btn-mentor-name").innerHTML = currentMentor.title;
     var jobTitle = "";

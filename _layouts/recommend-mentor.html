@@ -14,7 +14,8 @@ layout: default
                     <div class="mentor-details">
                         <div class="post-type {{page.lang}}"> <i class="fas fa-newspaper"></i><span>{{
                                 site.data.t.recommend_mentor[page.lang] }}</span></div>
-                        <form class="form-group">
+                        <form class="form-group" name="recommend-mentor">
+                            <input name='form-type' type='hidden' value='recommend-mentor'>
                             <div class="form-row">
                                 <div class="description">{{ site.data.t.recommend_mentor_help[page.lang] }}</div>
                             </div>
@@ -23,21 +24,21 @@ layout: default
                                     <div class="form-label">{{ site.data.t.mentor_full_name[page.lang] }}</div>
                                     <div class="form-fields">
                                         <input class="form-input" id="mentor-name" placeholder="{{ site.data.t.mentor_full_name[page.lang] }}"
-                                            name="mentor-name" type="text" />
+                                            name="mentorname" type="text" />
                                     </div>
                                 </div>
                                 <div class="form-row">
                                     <div class="form-label">{{ site.data.t.mentor_email[page.lang] }}</div>
                                     <div class="form-fields">
                                         <input class="form-input" id="mentor-email" placeholder="{{ site.data.t.mentor_email[page.lang] }}"
-                                            name="mentor-email" type="email" />
+                                            name="mentoremail" type="email" />
                                     </div>
                                 </div>
                                 <div class="form-row">
                                     <div class="form-label">{{ site.data.t.mentor_phone[page.lang] }}</div>
                                     <div class="form-fields">
                                         <input class="form-input" id="mentor-phone" placeholder="{{ site.data.t.mentor_phone[page.lang] }}"
-                                            name="mentor-phone" type="text" />
+                                            name="mentorphone" type="text" />
                                     </div>
                                 </div>
                                 <div class="form-row">
@@ -49,22 +50,34 @@ layout: default
                                         <a id="add_another_profile" onclick="addField()">{{ site.data.t.add_another_profile[page.lang] }}</a>
                                     </div>
                                 </div>
+                                {%include form-consent.html%}
                             </div>
                         </form>
                     </div>
                 </div>
-                <div class="mentor-form-button"> <a class="form-button" href="#">{{
+                <div class="mentor-form-button"> <a class="form-button" id='button-submit'>{{
                         site.data.t.submit[page.lang] }}</a></div>
             </div>
         </div>
     </div>
 </div>
+<div id="success-modal" class="modal">
+    <i class="fas success fa-check-circle"></i>
+    <p>{{ site.data.t.thank_you_submit[page.lang] }}</p>
+    <a class='button' href="{{ site.baseurl }}/{{ page.lang }}">{{ site.data.t.back_to_main_2[page.lang] }}</a>
+</div>
+<div id="error-modal" class="modal">
+    <i class="fas error fa-exclamation-circle"></i>
+    <p>{{ site.data.t.something_wrong_submit[page.lang] }}</p>
+    <a class='button' href="#" rel="modal:close">{{ site.data.t.close[page.lang] }}</a>
+</div>
+
 <script>
 function addField(){
     var fieldContainer = $('#social-profiles-container').find('.form-fields')[0];
     if (!fieldContainer) return;
     var count = fieldContainer.childElementCount+1;
-    var newField = $('<input class="form-input" id="mentor-social-' + count + '" placeholder="{{ site.data.t.mentor_social_placeholder[page.lang] }}" name="mentor-social-' + count + '" type="text" />');
+    var newField = $('<input class="form-input mentor-social" id="mentor-social-' + count + '" placeholder="{{ site.data.t.mentor_social_placeholder[page.lang] }}" name="mentorsocial_' + count + '" type="url" />');
     newField.appendTo(fieldContainer);
 }
 

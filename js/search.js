@@ -36,8 +36,11 @@ function displaySearchResults(results, store) {
 
             var card = $('<div />', { "class": "mentor-card" });
 
-            var cardShadow = $('<div />', { "class": "mentor-content sh-2 hv" });
-            var cardImage = $('<div />', { "class": "mentor-image" });
+            var cardShadow = $('<div />', {  "class": "mentor-content sh-2 hv" });
+            cardShadow.click = function(){
+                window.location.href = item.url;
+            };
+            var cardImage = $('<a />', { "class": "mentor-image" , href: item.url });
             cardImage.css('background-image', 'url(' + item.image + ')');
             var cardInfo = $('<div />', { "class": "mentor-info" });
 
@@ -61,10 +64,10 @@ function displaySearchResults(results, store) {
             if (!query.tags) query.tags = [];
             tags.forEach(function(el, i) {
                 if (el.trim() != ''){
-                    if (i < 2) cardInfoTags.append('<li>' + '<a onclick="javascript:addTag(\'' + el.trim() + '\')">' + el.trim() + '</a>' + '</li>');
+                    cardInfoTags.append('<li>' + '<a onclick="event.stopPropagation(); javascript:addTag(\'' + el.trim() + '\', event)">' + el.trim() + '</a>' + '</li>');
                     if ((query.tags.indexOf(el.trim()) < 0) && addedTags.indexOf(el.trim()) < 0) {
                         addedTags.push(el.trim());
-                        $('#search-tags').append('<li>' + '<a onclick="javascript:toggleTag(\'' + el.trim() + '\')">' + el.trim() + '</a>' + '</li>');
+                        $('#search-tags').append('<li>' + '<a onclick="javascript:event.stopPropagation();toggleTag(\'' + el.trim() + '\', event)">' + el.trim() + '</a>' + '</li>');
                     }
                 }
             });
@@ -89,11 +92,12 @@ function displaySearchResults(results, store) {
             cardInfo.append(cardInfoName);
             cardInfo.append(cardInfoJobTitle);
             cardInfo.append(cardInfoBio);
-            cardInfo.append(cardFooter);
+            // cardInfo.append(cardFooter);
             
 
             cardShadow.append(cardImage);
             cardShadow.append(cardInfo);
+            cardShadow.append(cardFooter);
 
             card.append(cardShadow);
 
@@ -117,8 +121,13 @@ function displayAll(store) {
         var item = store[i];
         var card = $('<div />', { "class": "mentor-card" });
 
-        var cardShadow = $('<div />', { "class": "mentor-content sh-2 hv" });
-        var cardImage = $('<div />', { "class": "mentor-image" });
+        var cardShadow = $('<div />', {  "class": "mentor-content sh-2 hv", "id": "mentor-id-" + i, "data-url": item.url });
+        cardShadow.click(function(e){
+            if (e.target.nodeName !== 'A' && e.target.nodeName !== 'I')
+                window.location.href = e.currentTarget.getAttribute('data-url');
+                //window.location.href = item.url;
+        });
+        var cardImage = $('<a />', { "class": "mentor-image" , href: item.url });
         cardImage.css('background-image', 'url(' + item.image + ')');
 
         var cardInfo = $('<div />', { "class": "mentor-info" });
@@ -144,7 +153,7 @@ function displayAll(store) {
         tags.forEach(function(el, i){
             if ((el.trim() != '') && (addedTags.indexOf(el.trim()) < 0)){
                 addedTags.push(el.trim());
-                if (i < 2) cardInfoTags.append('<li>' + '<a onclick="javascript:addTag(\'' + el.trim() + '\')">' + el.trim() + '</a>' + '</li>');
+                cardInfoTags.append('<li>' + '<a onclick="javascript:event.stopPropagation();addTag(\'' + el.trim() + '\', event)">' + el.trim() + '</a>' + '</li>');
                 if (query.tags.indexOf(el.trim()) < 0) $('#search-tags').append('<li>' + '<a onclick="javascript:toggleTag(\'' + el.trim() + '\')">' + el.trim() + '</a>' + '</li>');
             }
         });
@@ -170,10 +179,12 @@ function displayAll(store) {
         cardInfo.append(cardInfoName);
         cardInfo.append(cardInfoJobTitle);
         cardInfo.append(cardInfoBio);
-        cardInfo.append(cardFooter);
+        // cardInfo.append(cardFooter);
+        
 
         cardShadow.append(cardImage);
         cardShadow.append(cardInfo);
+        cardShadow.append(cardFooter);
 
         card.append(cardShadow);
 
@@ -199,13 +210,14 @@ function getQueryVariable() {
     return query;
 }
 
-function search(query) {
+function search(query, initial) {
+    var results;
     if (query.search && query.search.trim() != '') {
         var searchTerm = query.search.trim();
         document.getElementById('search-box').setAttribute("value", searchTerm);
 
         var unfilteredResults = idx.search(searchTerm);
-        var results = unfilteredResults;
+        results = unfilteredResults;
         if (query.tags && query.tags.length > 0) {
             results = unfilteredResults.filter(function(el){
                 var item = mentors[el.ref];
@@ -223,10 +235,10 @@ function search(query) {
         results = results.filter(function(el){
             var item = mentors[el.ref];
             return (item.title && item.title.trim()!='');
-        })
+        });
         displaySearchResults(results, mentors);
     } else {
-        var results = mentors;
+        results = mentors;
         if (query.tags && query.tags.length > 0) {
             results = mentors.filter(function(item){
                 var tagFound = true;
@@ -246,6 +258,7 @@ function search(query) {
         displayAll(results);
     }
     renderSelectedTags(query.tags);
+    if ((!initial || (query.tags && query.tags.length) || (query.search && query.search.trim() != ''))) pushAction('triggerAction', {actionType: 'filter', actionData: (query.tags && query.tags.length ? 'tags:' + query.tags : '') + (query.search? ';query:' + query.search : '') , extraData: { results: results.length}});
 };
 
 function onSearchButton() {
@@ -257,7 +270,8 @@ function onSearchButton() {
     search(getQueryVariable());
 }
 
-function toggleTag(tag) {
+function toggleTag(tag, e) {
+    if (e) e.stopPropagation();
     var query = getQueryVariable();
     if (!query.tags) query.tags = [];
     if (query.tags && query.tags.indexOf(tag) >= 0) query.tags.splice(query.tags.indexOf(tag), 1);
@@ -267,7 +281,8 @@ function toggleTag(tag) {
     onSearchButton();
 }
 
-function addTag(tag) {
+function addTag(tag, e) {
+    if (e) e.stopPropagation();
     var query = getQueryVariable();
     if (!query.tags) query.tags = [];
     if (query.tags.indexOf(tag) < 0) query.tags.push(tag);
@@ -299,4 +314,4 @@ $('body').on('click', '.search-inner', function(e) {
     $('#search-box').focus();
 });
 
-search(getQueryVariable());
+search(getQueryVariable(), true);

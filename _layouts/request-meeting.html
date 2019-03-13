@@ -21,6 +21,8 @@ layout: default
                     <div class="mentor-details">
                         <div class="post-type {{page.lang}}"> <i class="fas fa-newspaper"></i><span>{{ site.data.t.request_meeting[page.lang] }}</span></div>
                         <form class="form-group">
+                            <input name='form-type' type='hidden' value='request-meeting'>
+                            <input name='mentor' type='hidden'>
                             <div class="form-row">
                                 <div class="description">{{ site.data.t.request_meeting_help[page.lang] }}</div>
                             </div>
@@ -99,14 +101,24 @@ layout: default
                                         name="reason"></textarea>
                                 </div>
                             </div>
+                            {%include form-consent.html%}
                         </form>
                     </div>
                 </div>
-                <div class="mentor-form-button"> <a class="form-button" href="#">{{ site.data.t.request_meething_with[page.lang] }}<span id="btn-mentor-name">Mentor</span></a></div>
+                <div class="mentor-form-button"> <a class="form-button" id='button-submit'>{{ site.data.t.request_meething_with[page.lang] }}<span id="btn-mentor-name">Mentor</span></a></div>
             </div>
         </div>
     </div>
 </div>
-
+<div id="success-modal" class="modal">
+    <i class="fas success fa-check-circle"></i>
+    <p>{{ site.data.t.thank_you_submit[page.lang] }}{{ site.data.t.will_contact_submit[page.lang] }}</p>
+    <a class='button' href="#" onclick="javascript:goback('{{ site.baseurl }}/{{ page.lang }}');">{{ site.data.t.back_to_main_2[page.lang] }}</a>
+</div>
+<div id="error-modal" class="modal">
+    <i class="fas error fa-exclamation-circle"></i>
+    <p>{{ site.data.t.something_wrong_submit[page.lang] }}</p>
+    <a class='button' href="#" rel="modal:close">{{ site.data.t.close[page.lang] }}</a>
+</div>
 <script type="text/javascript" src="{{ site.baseurl }}/mentors.{{page.lang}}.js"></script>
 <script type="text/javascript" src="{{ site.baseurl }}/js/request.js"></script>

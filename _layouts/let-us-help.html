@@ -16,6 +16,7 @@ layout: default
                         <div class="post-type {{page.lang}}"> <i class="fas fa-newspaper"></i><span>{{
                                 site.data.t.let_us_help[page.lang] }}</span></div>
                         <form class="form-group">
+                            <input name='form-type' type='hidden' value='request-help'>
                             <div class="form-row">
                                 <div class="description">{{ site.data.t.let_us_help_help[page.lang] }}</div>
                             </div>
@@ -91,13 +92,24 @@ layout: default
                                             name="reason"></textarea>
                                     </div>
                                 </div>
+                                {%include form-consent.html%}
                             </div>
                         </form>
                     </div>
                 </div>
-                <div class="mentor-form-button"> <a class="form-button" href="#">{{
+                <div class="mentor-form-button"> <a class="form-button" id='button-submit'>{{
                         site.data.t.submit[page.lang] }}</a></div>
             </div>
         </div>
     </div>
+</div>
+<div id="success-modal" class="modal">
+    <i class="fas success fa-check-circle"></i>
+    <p>{{ site.data.t.thank_you_submit[page.lang] }}</p>
+    <a class='button' href="{{ site.baseurl }}/{{ page.lang }}">{{ site.data.t.back_to_main_2[page.lang] }}</a>
+</div>
+<div id="error-modal" class="modal">
+    <i class="fas error fa-exclamation-circle"></i>
+    <p>{{ site.data.t.something_wrong_submit[page.lang] }}</p>
+    <a class='button' href="#" rel="modal:close">{{ site.data.t.close[page.lang] }}</a>
 </div>

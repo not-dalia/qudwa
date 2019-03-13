@@ -184,6 +184,12 @@ body {
     font-family: 'Comfortaa', 'Noto Kufi Arabic', sans-serif;
 }
 
+.mentor-details .education-row:before {
+    top: 1px;
+    right: 8px;
+    left: auto;
+}
+
 .mentor-details .social-media-row {
     left: 20px;
 }
@@ -217,6 +223,16 @@ body {
 
 #back-to-profile{
     font-family: 'Comfortaa', 'Noto Kufi Arabic', sans-serif;
+}
+
+
+.modal {
+    font-family: "Cabin", arial, sans-serif;
+    font-size: 0.85em;
+}
+
+#cookie-settings-modal td {
+    text-align: right;
 }
 
 @media only screen and (max-width: 562px) {
