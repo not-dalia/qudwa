@@ -153,8 +153,10 @@ function displayAll(store) {
         tags.forEach(function(el, i){
             if ((el.trim() != '') && (addedTags.indexOf(el.trim()) < 0)){
                 addedTags.push(el.trim());
-                cardInfoTags.append('<li>' + '<a onclick="javascript:event.stopPropagation();addTag(\'' + el.trim() + '\', event)">' + el.trim() + '</a>' + '</li>');
                 if (query.tags.indexOf(el.trim()) < 0) $('#search-tags').append('<li>' + '<a onclick="javascript:toggleTag(\'' + el.trim() + '\')">' + el.trim() + '</a>' + '</li>');
+            }
+            if ((el.trim() != '')){
+                cardInfoTags.append('<li>' + '<a onclick="javascript:event.stopPropagation();addTag(\'' + el.trim() + '\', event)">' + el.trim() + '</a>' + '</li>');
             }
         });
 
