@@ -172,6 +172,7 @@ body {
 
 .mentor-details .long-bio-row {
     font-family: 'Comfortaa', 'Noto Kufi Arabic', sans-serif;
+    font-weight: normal !important;
 }
 
 .mentor-details .details-row .title {
