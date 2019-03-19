@@ -3,10 +3,10 @@ ref: lama_alzamil
 lang: en
 categories: en
 name: Lama Alzamil
-jobtitle: Teaching Assistant-PhD student
-workplace: King Saud University - Cambridge University
+jobtitle: Teaching Assistant
+workplace: King Saud University
 shortbio: >-
-  Lama has a Clinical Laboratory Sciences degree and in her PhD she works on the
+  Obtained a Clinical Laboratory Sciences degree and now I work on the
   development of an experimental 3D model of the cervix to help scientists
   understand cervical cancer.
 longbio: >-
