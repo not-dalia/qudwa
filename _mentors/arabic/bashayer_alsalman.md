@@ -13,14 +13,15 @@ published: true
 image: >-
   https://raw.githubusercontent.com/not-dalia/qudwa/gh-pages/media/15515961160551551596113103_logo.jpg
 tags:
+  - تقنية
+  - هندسة
   - مهندسة برمجيات
-  - اندرويد
-  - علوم الحاسب
 topics:
   - تطوير اندرويد
   - قواعد البيانات
   - تبادل المعرفة
   - التقديم للوظائف
+  - اندرويد
 interests: []
 education-experience:
   - title: شهادة البكالوريس
