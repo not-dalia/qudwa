@@ -3,7 +3,7 @@ ref: lama_alzamil
 lang: ar
 categories: ar
 name: لمى الزامل
-jobtitle: معيدة-
+jobtitle: معيدة
 workplace: جامعة الملك سعود
 shortbio: >-
   حاصلة على شهادة علوم المختبرات السريرية واعمل في الدكتوراه على تطوير نموذج
@@ -23,14 +23,16 @@ tags:
   - تقنية طبية
 topics:
   - علم الامراض
+  - التقديم للجامعات
+  - المساعدة للحصول على فرص تدريبية
 interests:
   - السفر
   - الفن
 education-experience:
   - title: شهادة البكاللوريس
     place: جامعة الملك سعود
-    description: علوم المختبرات السريرية
-    duration: ٢٠٠٩ - ٢٠١٢
+    description: علوم المختبرات الاكلينيكية
+    duration: ٢٠٠٧ - ٢٠١٢
   - title: شهادة الماجستير
     place: Imperial College London
     description: البيولوجيا الجزيئية وعلم أمراض الفيروسات
