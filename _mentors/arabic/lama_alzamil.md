@@ -19,9 +19,10 @@ image: >-
   https://raw.githubusercontent.com/not-dalia/qudwa/gh-pages/media/15528096120881552809606459_Lama.png
 tags:
   - تقنية طبية
-  - علم الامراض
+  - تقنية
   - علوم
-topics: []
+topics:
+  - علم الامراض
 interests:
   - السفر
   - الفن
