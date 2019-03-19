@@ -18,9 +18,9 @@ published: true
 image: >-
   https://raw.githubusercontent.com/not-dalia/qudwa/gh-pages/media/15528096120881552809606459_Lama.png
 tags:
-  - تقنية طبية
-  - تقنية
   - علوم
+  - تقنية
+  - تقنية طبية
 topics:
   - علم الامراض
 interests:
