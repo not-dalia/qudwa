@@ -24,7 +24,6 @@ topics:
   - coding
 interests:
   - languages
-  - cooking
   - Game Development
 education-experience:
   - title: Bachelor Degree
