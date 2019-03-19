@@ -6,9 +6,9 @@ name: Majd Abdulghani
 jobtitle: Research Technician II
 workplace: University of Michigan
 shortbio: >-
-  I’m a geneticist in the Cheung Lab at the University of Michigan. My long-term
-  goals are to make significant contributions to the field of genetics and to
-  mitigate racial and gender disparity in STEM fields.
+  I’m a geneticist and my long-term goals are to make significant contributions
+  to the field of genetics and to mitigate racial and gender disparity in STEM
+  fields.
 longbio: >-
   I’m currently a geneticist in a research lab at the University of Michigan. I
   completed my Master’s in Genetics and Genomics at Iowa State University in the
