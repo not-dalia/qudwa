@@ -2,7 +2,7 @@
 ref: rabab_allogmany
 lang: ar
 categories: ar
-name: رباب عايد اللقماني
+name: رباب اللقماني
 jobtitle: اخصائي تقني
 workplace: وزارة الصحة – مستشفى النساء والولادة والأطفال
 shortbio: >-
@@ -17,9 +17,8 @@ published: true
 image: >-
   https://raw.githubusercontent.com/not-dalia/qudwa/gh-pages/media/15515973039061551597302040_logo.jpg
 tags:
-  - تقنية المعلومات
-  - الصحة الالكترونية
-  - مشاريع
+  - تقنية
+  - الصحة
 topics:
   - الملف الالكتروني
   - المشاريع
