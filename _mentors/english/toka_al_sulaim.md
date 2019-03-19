@@ -2,8 +2,8 @@
 ref: toka_al_sulaim
 lang: en
 categories: en
-name: Toka Mesaad I. Al Sulaim
-jobtitle: Medical Doctor  Rheumatology Fellow
+name: Toka Al Sulaim
+jobtitle: Medical Doctor Rheumatology Fellow
 workplace: King Faisal Specialist Hospital & Research Center
 shortbio: Internal medicine specialist and a current Rheumatology Fellow.
 longbio: >-
@@ -18,8 +18,8 @@ published: true
 image: >-
   https://raw.githubusercontent.com/not-dalia/qudwa/gh-pages/media/15523706737471552370672427_logoPurple.jpg
 tags:
+  - science
   - medicine
-  - hospital
   - health
 topics:
   - applying to universities
