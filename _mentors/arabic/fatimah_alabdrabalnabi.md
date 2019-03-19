@@ -20,11 +20,11 @@ published: true
 image: >-
   https://raw.githubusercontent.com/not-dalia/qudwa/gh-pages/media/15517675802501551767578234_Screenshot%202019-03-05%20at%2009.30.58.png
 tags:
-  - ريادة الأعمال
-  - علوم الحاسب
+  - تقنية
 topics:
   - التدريب الوظيفي
   - ستارت اب
+  - ريادة الأعمال
 interests:
   - صناعة الافلام
   - القراءة
