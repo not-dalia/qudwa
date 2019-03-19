@@ -2,7 +2,7 @@
 ref: asma_alhumaidi
 lang: en
 categories: en
-name: Asma Alhumaidi Almutairi
+name: Asma Almutairi
 jobtitle: Developer
 workplace: ''
 shortbio: 'Enthusiastic, passionate about learning new concepts, obsessed with reading.'
