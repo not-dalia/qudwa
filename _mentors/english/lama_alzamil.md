@@ -21,10 +21,11 @@ published: true
 image: >-
   https://raw.githubusercontent.com/not-dalia/qudwa/gh-pages/media/15528096120881552809606459_Lama.png
 tags:
-  - biotechnology
-  - pathology
+  - technology
   - science
-topics: []
+  - biotechnology
+topics:
+  - pathology
 interests:
   - travelling
   - hiking
