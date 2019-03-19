@@ -5,7 +5,9 @@ categories: en
 name: Lujayn Alhddad
 jobtitle: UX Consultant
 workplace: Bupa Arabia
-shortbio: UX Consultant and Professional Speaker
+shortbio: >-
+  I have worked as a UX architect, designer, and an analyst in the eCommerce
+  field.
 longbio: >-
   Because I care, being professional and precise in work are my top priorities.
   I have worked as a UX architect, designer, and an analyst in the eCommerce
@@ -22,16 +24,16 @@ published: true
 image: >-
   https://raw.githubusercontent.com/not-dalia/qudwa/gh-pages/media/15515941788451551594175859_Lujayn.png
 tags:
+  - technology
+  - HCI
   - UX
-  - human computer interaction
-  - computer science
-  - e-commerce
 topics:
   - choose the major
   - applying to university
   - finding a job
   - writing cv
   - interview process preparation
+  - e-commerce
 interests:
   - driving
   - discover new places

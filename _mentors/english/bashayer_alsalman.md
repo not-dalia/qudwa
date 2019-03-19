@@ -15,9 +15,9 @@ published: true
 image: >-
   https://raw.githubusercontent.com/not-dalia/qudwa/gh-pages/media/15515961160551551596113103_logo.jpg
 tags:
+  - technology
+  - engineering
   - software engineer
-  - android
-  - computer science
 topics:
   - android development
   - spring boot
@@ -25,6 +25,7 @@ topics:
   - brain storming
   - share knowledge
   - job applications
+  - android
 interests: []
 education-experience:
   - title: Bachelor Degree

@@ -18,9 +18,9 @@ published: true
 image: >-
   https://raw.githubusercontent.com/not-dalia/qudwa/gh-pages/media/15517755491841551775547899_logoPurple.jpg
 tags:
-  - biomedical engineering
-  - engineering
   - technology
+  - engineering
+  - biomedical engineering
 topics:
   - choosing majors
   - applying to universities

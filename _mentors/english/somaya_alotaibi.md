@@ -16,15 +16,14 @@ published: true
 image: >-
   https://raw.githubusercontent.com/not-dalia/qudwa/gh-pages/media/15523843017471552384300729_logo.jpg
 tags:
-  - computer science
+  - technology
   - developer
   - web
 topics:
   - applying to universities
-  - code
+  - coding
 interests:
   - languages
-  - cooking
   - Game Development
 education-experience:
   - title: Bachelor Degree

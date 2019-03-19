@@ -3,12 +3,11 @@ ref: rawan_alsubaie
 lang: en
 categories: en
 name: Rawan AlSubaie
-jobtitle: PhD Candidate Research Specialist
-workplace: University College London - King Fahad Medical City
+jobtitle: Research Specialist
+workplace: King Fahad Medical City
 shortbio: >-
-  I am currently doing a PhD in Neuroscience at University College London. I
-  study the brain to understand how different areas “talk” to each other and how
-  this conversation can go wrong in disease.
+  I study the brain to understand how different areas “talk” to each other and
+  how this conversation can go wrong in disease.
 longbio: >-
   My name is Rawan AlSubaie, I am from Riyadh, Saudi Arabia. I studied my
   undergraduate in biomedical science at the university of Sheffield and
@@ -28,7 +27,7 @@ published: true
 image: >-
   https://raw.githubusercontent.com/not-dalia/qudwa/gh-pages/media/15523720673441552372065902_rawan.jpg
 tags:
-  - research
+  - science
   - biology
   - genetics
 topics:
@@ -37,6 +36,7 @@ topics:
   - graduate school
   - CV writing
   - cover letter writing
+  - research
 interests:
   - reading
   - writing

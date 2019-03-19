@@ -3,7 +3,7 @@ ref: ragad_allwihan
 lang: ar
 categories: ar
 name: رغد اللويحان
-jobtitle: أستاذ مساعد في علوم الحاسبات
+jobtitle: أستاذ مساعد
 workplace: جامعة الملك سعود بن عبدالعزيز للعلوم الصحية
 shortbio: >-
   أستاذ مساعد لعلوم الحسابات (تخصص هندسة التفاعل البشري الحاسوبي) مهتمة بالبحث
@@ -15,9 +15,8 @@ published: true
 image: >-
   https://raw.githubusercontent.com/not-dalia/qudwa/gh-pages/media/15517774056891551777404397_logoPurple.jpg
 tags:
-  - علوم الحاسب
-  - تقنية المعلومات
   - التفاعل البشري الحاسوبي
+  - تقنية
 topics:
   - التقديم على الجامعات
   - اختيار التخصص الدراسي

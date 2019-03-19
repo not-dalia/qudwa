@@ -7,8 +7,7 @@ jobtitle: Senior Analytics Engineer
 workplace: General Electric
 shortbio: >-
   Information Technology Professional. Specialized in Robotics Automation (RPA),
-  IT Projects Management and Data Analytics. Certified in PMP, TOGAF, CBAP,
-  ITIL, MCPD & MCTS.
+  IT Projects Management and Data Analytics.
 longbio: >-
   I have 12 years experience in Information Technology field. I graduated from
   King Saud University with bachelor’s degree in information Science. I have
@@ -20,11 +19,12 @@ published: true
 image: >-
   https://raw.githubusercontent.com/not-dalia/qudwa/gh-pages/media/15515987352781551598733409_logo.jpg
 tags:
-  - information technology
-  - project management
-  - computer science
+  - technology
+  - engineering
 topics:
   - university & job applications
+  - project management
+  - data & process analytics
 interests:
   - sport
   - reading

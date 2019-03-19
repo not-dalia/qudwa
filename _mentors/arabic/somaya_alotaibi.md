@@ -14,7 +14,7 @@ published: true
 image: >-
   https://raw.githubusercontent.com/not-dalia/qudwa/gh-pages/media/15523843017471552384300729_logo.jpg
 tags:
-  - علوم الحاسب
+  - تقنية
   - مطور
   - ويب
 topics:
@@ -22,7 +22,6 @@ topics:
   - برمجة
 interests:
   - اللغات
-  - الطبخ
   - تطوير الالعاب
 education-experience:
   - title: شهادة البكالوريس

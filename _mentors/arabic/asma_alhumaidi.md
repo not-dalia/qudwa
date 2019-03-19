@@ -2,8 +2,8 @@
 ref: asma_alhumaidi
 lang: ar
 categories: ar
-name: أسماء الحميدي المطيري
-jobtitle: مطورة
+name: أسماء المطيري
+jobtitle: مطورة برمجيات
 workplace: ''
 shortbio: شغوفة بتعلم مفاهيم جديدة و أحب القراءة
 longbio: >-
@@ -13,13 +13,14 @@ published: true
 image: >-
   https://raw.githubusercontent.com/not-dalia/qudwa/gh-pages/media/15517735574141551773556150_logo.jpg
 tags:
-  - تطوير
-  - دمج
-  - ادارة مشاريع
+  - تقنية
+  - مطور
 topics:
   - التقديم للوظائف
   - المسارات المختلفة
   - التخطيط الوظيفي في مجال تقنية المعلومات
+  - ادارة مشاريع
+  - دمج
 interests:
   - التعلم
   - القراءة

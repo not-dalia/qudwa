@@ -2,13 +2,12 @@
 ref: fatimah_alabdrabalnabi
 lang: en
 categories: en
-name: Fatimah Ahmad Alabdrabalnabi
+name: Fatimah Alabdrabalnabi
 jobtitle: Account Manager
 workplace: Oracle
 shortbio: >-
-  Fatimah is a result driven and dynamic professional with experience in
-  business growth and leadership within multinational company like Microsoft,
-  Cisco, and Oracle.
+  A driven and dynamic professional with experience in business growth and
+  leadership within multinational company like Microsoft, Cisco, and Oracle.
 longbio: >-
   Fatimah is a result driven and dynamic professional with experience in Sales,
   business growth and leadership within multinational company like Microsoft,
@@ -23,12 +22,12 @@ published: true
 image: >-
   https://raw.githubusercontent.com/not-dalia/qudwa/gh-pages/media/15517675802501551767578234_Screenshot%202019-03-05%20at%2009.30.58.png
 tags:
-  - entrepreneurship
-  - computer science
+  - technology
 topics:
   - career coaching
   - personal branding
   - startup
+  - entrepreneurship
 interests:
   - movie making
   - reading
