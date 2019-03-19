@@ -17,11 +17,11 @@ published: true
 image: >-
   https://raw.githubusercontent.com/not-dalia/qudwa/gh-pages/media/15515987352781551598733409_logo.jpg
 tags:
-  - تقنية المعلومات
-  - ادارة مشاريع
-  - تحليل البيانات و العمليات
+  - تقنية
 topics:
   - التقديم للوظائف و الجامعات
+  - ادارة مشاريع
+  - تحليل البيانات و العمليات
 interests:
   - الرياضة
   - القراءة
