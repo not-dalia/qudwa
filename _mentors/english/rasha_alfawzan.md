@@ -20,11 +20,11 @@ published: true
 image: >-
   https://raw.githubusercontent.com/not-dalia/qudwa/gh-pages/media/15515987352781551598733409_logo.jpg
 tags:
-  - information technology
-  - project management
-  - computer science
+  - technology
 topics:
   - university & job applications
+  - project management
+  - data & process analytics
 interests:
   - sport
   - reading
