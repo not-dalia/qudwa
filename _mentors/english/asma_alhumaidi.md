@@ -13,13 +13,14 @@ published: true
 image: >-
   https://raw.githubusercontent.com/not-dalia/qudwa/gh-pages/media/15517735574141551773556150_logo.jpg
 tags:
+  - technology
   - developer
-  - integration
-  - project management
 topics:
   - job applications
   - different paths to take
   - how to set up a career plan in IT fields
+  - integration
+  - project management
 interests:
   - learning
   - reading
