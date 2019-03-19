@@ -2,7 +2,7 @@
 ref: fatimah_alabdrabalnabi
 lang: en
 categories: en
-name: Fatimah Ahmad Alabdrabalnabi
+name: Fatimah Alabdrabalnabi
 jobtitle: Account Manager
 workplace: Oracle
 shortbio: >-
