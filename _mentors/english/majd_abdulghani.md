@@ -27,6 +27,7 @@ tags:
   - science
   - biology
   - genome
+  - genetics
 topics:
   - Applying to universities and scholarships
   - job applications
