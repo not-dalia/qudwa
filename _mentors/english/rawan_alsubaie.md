@@ -6,9 +6,8 @@ name: Rawan AlSubaie
 jobtitle: Research Specialist
 workplace: King Fahad Medical City
 shortbio: >-
-  I am currently doing a PhD in Neuroscience at University College London. I
-  study the brain to understand how different areas “talk” to each other and how
-  this conversation can go wrong in disease.
+  I study the brain to understand how different areas “talk” to each other and
+  how this conversation can go wrong in disease.
 longbio: >-
   My name is Rawan AlSubaie, I am from Riyadh, Saudi Arabia. I studied my
   undergraduate in biomedical science at the university of Sheffield and
