@@ -17,9 +17,9 @@ published: true
 image: >-
   https://raw.githubusercontent.com/not-dalia/qudwa/gh-pages/media/15517755491841551775547899_logoPurple.jpg
 tags:
+  - تقنية
+  - هندسة
   - الهندسة الطبية الحيوية
-  - الهندسة
-  - التقنية
 topics:
   - اختيار التخصص
   - التقديم للجامعات
