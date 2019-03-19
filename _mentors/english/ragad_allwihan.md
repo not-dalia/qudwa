@@ -3,7 +3,7 @@ ref: ragad_allwihan
 lang: en
 categories: en
 name: Ragad Allwihan
-jobtitle: Assistant Professor of Computer Science
+jobtitle: Assistant Professor
 workplace: KSAU-HS
 shortbio: >-
   Assistant Professor of Computer Science (Human Computer Interaction)
@@ -15,8 +15,8 @@ published: true
 image: >-
   https://raw.githubusercontent.com/not-dalia/qudwa/gh-pages/media/15517774056891551777404397_logoPurple.jpg
 tags:
-  - information technology
-  - human computer interaction
+  - technology
+  - HCI
 topics:
   - applying to university
   - choose a major
