@@ -3,12 +3,11 @@ ref: dalia_alghamdi
 lang: en
 categories: en
 name: Dalia Alghamdi
-jobtitle: Clinical research specialist - Bioinformatics PhD student
+jobtitle: Clinical research specialist
 workplace: King Fahad Medical City
 shortbio: >-
-  I am a PhD student at University of British Columbia, sponsored by King Fahad
-  Medical City. My Research interests are: Clinical big data | IoT | genomics |
-  data sciences
+  I am a PhD student at University of British Columbia. My Research interests
+  are: Clinical big data | IoT | genomics | data sciences
 longbio: >-
   I am a PhD student at University of British Columbia, sponsored by King Fahad
   Medical City. My Research interests are: Clinical big data | IoT | genomics |
