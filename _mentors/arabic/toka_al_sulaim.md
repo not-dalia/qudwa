@@ -2,7 +2,7 @@
 ref: toka_al_sulaim
 lang: ar
 categories: ar
-name: تقى مساعد السليم
+name: تقى السليم
 jobtitle: طبيبة  - زمالة في أمراض الروماتيزم
 workplace: مستشفى الملك فيصل التخصصي و مركز الأبحاث
 shortbio: أخصائية الطب الباطني و طبيبة زمالة أمراض الروماتيزم .
@@ -17,7 +17,7 @@ image: >-
   https://raw.githubusercontent.com/not-dalia/qudwa/gh-pages/media/15523706737471552370672427_logoPurple.jpg
 tags:
   - طب
-  - مستشفى
+  - علوم
   - صحة
 topics:
   - التقديم عل الجامعات
