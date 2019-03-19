@@ -19,9 +19,8 @@ published: true
 image: >-
   https://raw.githubusercontent.com/not-dalia/qudwa/gh-pages/media/15515973039061551597302040_logo.jpg
 tags:
-  - information technology
-  - e-health
-  - projects
+  - technology
+  - health
 topics:
   - e-file
   - projects
