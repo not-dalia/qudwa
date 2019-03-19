@@ -2,7 +2,7 @@
 ref: fatimah_alabdrabalnabi
 lang: ar
 categories: ar
-name: فاطمة أحمد العبد رب النبي
+name: فاطمة العبد رب النبي
 jobtitle: مديرة حساب
 workplace: آوراكل
 shortbio: >-
