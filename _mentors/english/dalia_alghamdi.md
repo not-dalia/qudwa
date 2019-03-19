@@ -17,15 +17,16 @@ published: true
 image: >-
   https://raw.githubusercontent.com/not-dalia/qudwa/gh-pages/media/15517789194071551778917257_Dalia.jpg
 tags:
-  - genome
-  - data science
-  - IoT
-  - clinical big data
-  - bioinformatics
+  - science
   - technology
+  - genome
+  - bioinformatics
 topics:
   - university applications
   - bioinformatics related training
+  - IoT
+  - data science
+  - clinical big data
 interests:
   - book warm
   - drawing
