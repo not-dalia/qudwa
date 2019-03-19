@@ -22,7 +22,6 @@ topics:
   - برمجة
 interests:
   - اللغات
-  - الطبخ
   - تطوير الالعاب
 education-experience:
   - title: شهادة البكالوريس
