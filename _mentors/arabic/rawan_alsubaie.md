@@ -3,8 +3,8 @@ ref: rawan_alsubaie
 lang: ar
 categories: ar
 name: روان السبيعي
-jobtitle: مرشحة لدرجة الدكتوراه - أخصائية أبحاث
-workplace: University College London - مدينة الملك فهد الطبية
+jobtitle: أخصائية أبحاث
+workplace: مدينة الملك فهد الطبية
 shortbio: >-
   أعمل حاليًا على درجة الدكتوراه في العلوم العصبية في جامعة كوليدج بلندن. أدرس
   الدماغ لفهم كيف "تتحدث" مناطق مختلفة مع بعضها البعض وكيف يمكن أن تحدث هذه
@@ -25,7 +25,7 @@ published: true
 image: >-
   https://raw.githubusercontent.com/not-dalia/qudwa/gh-pages/media/15523720673441552372065902_rawan.jpg
 tags:
-  - البحث
+  - علوم
   - الأحياء
   - الوراثة
 topics:
@@ -33,6 +33,7 @@ topics:
   - التقديم على الجامعات
   - التعليم ما بعد الجامعي
   - السيرة الذاتية
+  - البحث
 interests:
   - القراءة
   - الكتابة
