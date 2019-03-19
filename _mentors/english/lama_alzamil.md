@@ -26,6 +26,8 @@ tags:
   - biotechnology
 topics:
   - pathology
+  - applying for universities
+  - how to approach scientists for internships
 interests:
   - travelling
   - hiking
@@ -34,7 +36,7 @@ education-experience:
   - title: Bachelor's Degree
     place: King Saud University
     description: Clinical Laboratory Science/Medical Technology/Technologist
-    duration: 2009-2012
+    duration: 2007-2012
   - title: Master's Degree
     place: Imperial College London
     description: The Molecular Biology & Pathology of Viruses
