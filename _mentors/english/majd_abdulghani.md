@@ -24,13 +24,15 @@ published: true
 image: >-
   https://raw.githubusercontent.com/not-dalia/qudwa/gh-pages/media/15515915160851551591512053_Screenshot%202019-03-03%20at%2008.38.13.png
 tags:
-  - genetics
-  - molecular biology
+  - science
+  - biology
   - genome
 topics:
   - Applying to universities and scholarships
   - job applications
   - talking about research and science (especially biology)
+  - genetics
+  - molecular biology
 interests:
   - Reading
   - Racquetball
