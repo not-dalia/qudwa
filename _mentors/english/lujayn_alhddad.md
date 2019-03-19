@@ -22,16 +22,16 @@ published: true
 image: >-
   https://raw.githubusercontent.com/not-dalia/qudwa/gh-pages/media/15515941788451551594175859_Lujayn.png
 tags:
+  - technology
+  - HCI
   - UX
-  - human computer interaction
-  - computer science
-  - e-commerce
 topics:
   - choose the major
   - applying to university
   - finding a job
   - writing cv
   - interview process preparation
+  - e-commerce
 interests:
   - driving
   - discover new places
