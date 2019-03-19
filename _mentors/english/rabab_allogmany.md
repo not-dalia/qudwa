@@ -7,9 +7,7 @@ jobtitle: Technical Specialist
 workplace: Ministry of Health
 shortbio: >-
   The activation of the electronic file in Saudi Arabia is one of the most
-  important goals that I seek to achieve. Despite the difficulties facing
-  individuals to activate any electronic system, but it is a necessary  change
-  in the health sector.
+  important goals that I seek to achieve.
 longbio: >-
   The activation of the electronic file in Saudi Arabia is one of the most
   important goals that I seek to achieve. Despite the difficulties facing
