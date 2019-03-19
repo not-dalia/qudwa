@@ -4,10 +4,9 @@ lang: en
 categories: en
 name: Majd Abdulghani
 jobtitle: Research Technician II
-workplace: Howard Hughes Medical Institute | University of Michigan
+workplace: University of Michigan
 shortbio: >-
-  I’m a geneticist in the Cheung Lab at the University of Michigan. I’m
-  interested in the role of RNA in regulating gene expression. My long-term
+  I’m a geneticist in the Cheung Lab at the University of Michigan. My long-term
   goals are to make significant contributions to the field of genetics and to
   mitigate racial and gender disparity in STEM fields.
 longbio: >-
