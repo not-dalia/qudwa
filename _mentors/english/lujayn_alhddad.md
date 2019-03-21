@@ -5,9 +5,7 @@ categories: en
 name: Lujayn Alhddad
 jobtitle: UX Consultant
 workplace: Bupa Arabia
-shortbio: >-
-  I have worked as a UX architect, designer, and an analyst in the eCommerce
-  field.
+shortbio: Expert in UX process with expertise in e-commerce & mobile apps.
 longbio: >-
   Because I care, being professional and precise in work are my top priorities.
   I have worked as a UX architect, designer, and an analyst in the eCommerce
@@ -22,11 +20,12 @@ longbio: >-
   SMILE
 published: true
 image: >-
-  https://raw.githubusercontent.com/not-dalia/qudwa/gh-pages/media/15515941788451551594175859_Lujayn.png
+  https://raw.githubusercontent.com/not-dalia/qudwa/gh-pages/media/15531434878941553143478913_LuajynAlhddad.jpeg
 tags:
   - technology
   - HCI
   - UX
+  - entrepreneurship
 topics:
   - choose the major
   - applying to university
@@ -51,7 +50,12 @@ education-experience:
     place: Bupa Arabia
     description: ''
     duration: Jan 2019 - present
+  - title: UX Architect
+    place: UXBERT Labs
+    description: ''
+    duration: Jul 2017 - Aug 2017
 social-accounts:
   twitter: 'https://twitter.com/lujaynhaddad'
+  linkedin: 'https://www.linkedin.com/in/lujaynhaddad/'
 
 ---
