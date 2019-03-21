@@ -14,8 +14,8 @@ longbio: >-
   completed my Master’s in Genetics and Genomics at Iowa State University in the
   US and I will be starting my PhD in Oncology at Oxford University in October
   2019 as the first Saudi Arabian Rhodes Scholar, God willing. I have been
-  actively doing research for about three years now and have written three
-  scientific papers. During my undergraduate studies in Saudi Arabia, I
+  actively doing research for about three years now and have contributed to
+  several scientific papers. During my undergraduate studies in Saudi Arabia, I
   unfortunately was not taught about or exposed to many research opportunities.
   By participating in this project, I hope to expand the number of young Saudi
   women engaged in scientific research.
