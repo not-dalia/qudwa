@@ -16,9 +16,13 @@ image: >-
 tags:
   - تقنية
   - الصحة
+  - التفاعل البشري الحاسوبي
 topics:
-  - الملف الالكتروني
-  - المشاريع
+  - التحليل
+  - أمن المعلومات
+  - انترنت الأشياء
+  - الواقع الافتراضي
+  - التحول الرقمي
 interests:
   - كتابة قصص القصيرة
   - السفر
@@ -26,8 +30,9 @@ interests:
 education-experience:
   - title: شهادة الماجستير
     place: بريطانيا
-    description: تفاعل الانسان و الحاسب
+    description: نظم المعلومات
     duration: ''
-social-accounts: {}
+social-accounts:
+  twitter: 'https://twitter.com/rallogmany'
 
 ---
