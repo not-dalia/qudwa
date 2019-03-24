@@ -19,9 +19,13 @@ image: >-
 tags:
   - technology
   - health
+  - human computer interaction
 topics:
-  - e-file
-  - projects
+  - cyber security
+  - analysis
+  - IoT
+  - VR
+  - digital transformation
 interests:
   - short stories
   - shopping
@@ -29,8 +33,9 @@ interests:
 education-experience:
   - title: Master's Degree
     place: UK
-    description: Human computer Interaction
+    description: Information Systems
     duration: ''
-social-accounts: {}
+social-accounts:
+  twitter: 'https://twitter.com/rallogmany'
 
 ---
