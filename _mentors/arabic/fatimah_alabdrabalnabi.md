@@ -45,6 +45,8 @@ education-experience:
     place: سيسكو
     description: تحليل بيانات
     duration: ٢٠١٦-٢٠١٨
-social-accounts: {}
+social-accounts:
+  twitter: 'https://twitter.com/faabdllah'
+  linkedin: 'http://linkedin.com/in/fatimahaabdullah'
 
 ---
