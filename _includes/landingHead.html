@@ -1,7 +1,7 @@
 <head>
     <script src="{{ site.baseurl }}/js/language.js"></script>
     <script>
-        if (localStorage && localStorage.lang)
+        if (localStorage != null && localStorage.lang)
             redirectToHome(localStorage.lang);
         else {
             var userLang = navigator.language || navigator.userLanguage;
