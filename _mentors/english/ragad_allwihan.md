@@ -43,7 +43,7 @@ education-experience:
     description: Computer science – Human Computer Interaction – Health Informatics
     duration: ''
 social-accounts:
-  link: WWW.HCIARABIA.COM
+  link: http://WWW.HCIARABIA.COM
   twitter: 'https://twitter.com/HCIARABIA'
 
 ---

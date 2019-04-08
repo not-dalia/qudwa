@@ -39,7 +39,7 @@ education-experience:
     description: ''
     duration: ''
 social-accounts:
-  link: WWW.HCIARABIA.COM
+  link: http://WWW.HCIARABIA.COM
   twitter: 'https://twitter.com/HCIARABIA'
 
 ---
