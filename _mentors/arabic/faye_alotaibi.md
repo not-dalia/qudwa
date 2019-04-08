@@ -43,7 +43,7 @@ education-experience:
     description: تسجيل الأجهزة الطبية و ضمان امتثالها للوائح التنظيمية.
     duration: ''
 social-accounts:
-  twitter: FAYE__93
+  twitter: 'https://twitter.com/Faye__93 ‏'
   linkedin: 'https://www.linkedin.com/in/faye-alotaibi-995b2bb7/'
 
 ---
