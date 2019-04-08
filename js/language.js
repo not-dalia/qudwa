@@ -1,5 +1,5 @@
 function languageSelect(url, language){
-    if (typeof(Storage) !== "undefined") {
+    if (typeof(localStorage) !== "undefined" && localStorage) {
         localStorage.lang = language;
     } 
 
@@ -9,7 +9,7 @@ function languageSelect(url, language){
 }
 
 function checkLanguage(url, urls){
-    if (typeof(Storage) !== "undefined") {
+    if (typeof(localStorage) !== "undefined" && localStorage) {
         console.log(localStorage.lang);
         console.log(urls);
         if(localStorage.lang && (localStorage.lang == 'en' || localStorage.lang == 'ar'))
