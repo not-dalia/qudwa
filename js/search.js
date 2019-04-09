@@ -63,11 +63,12 @@ function displaySearchResults(results, store) {
             var query = getQueryVariable();
             if (!query.tags) query.tags = [];
             tags.forEach(function(el, i) {
-                if (el.trim() != ''){
-                    cardInfoTags.append('<li>' + '<a onclick="event.stopPropagation(); javascript:addTag(\'' + el.trim() + '\', event)">' + el.trim() + '</a>' + '</li>');
+                var cleanTag = sanitizeHTML(el.trim());
+                if (cleanTag != ''){
+                    cardInfoTags.append('<li>' + '<a onclick="event.stopPropagation(); javascript:addTag(\'' + cleanTag + '\', event)">' + cleanTag + '</a>' + '</li>');
                     if ((query.tags.indexOf(el.trim()) < 0) && addedTags.indexOf(el.trim()) < 0) {
                         addedTags.push(el.trim());
-                        $('#search-tags').append('<li>' + '<a onclick="javascript:event.stopPropagation();toggleTag(\'' + el.trim() + '\', event)">' + el.trim() + '</a>' + '</li>');
+                        $('#search-tags').append('<li>' + '<a onclick="javascript:event.stopPropagation();toggleTag(\'' + cleanTag + '\', event)">' + cleanTag + '</a>' + '</li>');
                     }
                 }
             });
@@ -151,12 +152,13 @@ function displayAll(store) {
         var query = getQueryVariable();
         if (!query.tags) query.tags = [];
         tags.forEach(function(el, i){
-            if ((el.trim() != '') && (addedTags.indexOf(el.trim()) < 0)){
+            var cleanTag = sanitizeHTML(el.trim());
+            if ((cleanTag != '') && (addedTags.indexOf(el.trim()) < 0)){
                 addedTags.push(el.trim());
-                if (query.tags.indexOf(el.trim()) < 0) $('#search-tags').append('<li>' + '<a onclick="javascript:toggleTag(\'' + el.trim() + '\')">' + el.trim() + '</a>' + '</li>');
+                if (query.tags.indexOf(el.trim()) < 0) $('#search-tags').append('<li>' + '<a onclick="javascript:toggleTag(\'' + cleanTag + '\')">' + cleanTag + '</a>' + '</li>');
             }
             if ((el.trim() != '')){
-                cardInfoTags.append('<li>' + '<a onclick="javascript:event.stopPropagation();addTag(\'' + el.trim() + '\', event)">' + el.trim() + '</a>' + '</li>');
+                cardInfoTags.append('<li>' + '<a onclick="javascript:event.stopPropagation();addTag(\'' + cleanTag + '\', event)">' + cleanTag + '</a>' + '</li>');
             }
         });
 
@@ -299,10 +301,17 @@ function renderSelectedTags(tags){
     selectedTags.innerHTML = '';
     var tagsHTML = '';
     for (var i = 0; i < tags.length; i++){
-        tagsHTML += '<div class="tag"><div class="tag-side"> ' + tags[i].trim() +' </div> <div class="close-side" onclick="javascript:toggleTag(\'' + tags[i].trim() + '\')">⨯</div></div>';
+        var cleanTag = sanitizeHTML(tags[i].trim())
+        tagsHTML += '<div class="tag"><div class="tag-side"> ' + cleanTag +' </div> <div class="close-side" onclick="javascript:toggleTag(\'' + cleanTag + '\')">⨯</div></div>';
     }
 
     selectedTags.innerHTML = tagsHTML;
+}
+
+function sanitizeHTML (str) {
+	var temp = document.createElement('div');
+	temp.textContent = str;
+	return temp.innerHTML;
 }
 
 $('#search-box').keypress(function (event) {
