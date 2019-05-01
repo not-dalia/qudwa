@@ -29,6 +29,10 @@ education-experience:
     place: معالم الاركان
     description: ''
     duration: 2014 - 2018
+  - title: Aircraft interior Engineer
+    place: Alsalam Aerospace Industries
+    description: ''
+    duration: 2018 - present
 social-accounts:
   linkedin: 'https://www.linkedin.com/in/hala-alanazi-92a05b111/'
 
