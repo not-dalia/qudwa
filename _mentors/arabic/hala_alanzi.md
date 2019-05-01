@@ -29,6 +29,10 @@ education-experience:
     place: معالم الاركان
     description: ''
     duration: ٢٠١٤ - ٢٠١٨
+  - title: مهندسة داخلية للطائرات
+    place: شركة السلام لصناعة الطائرات
+    description: ''
+    duration: ٢٠١٨ - للوقت الحالي
 social-accounts:
   linkedin: 'https://www.linkedin.com/in/hala-alanazi-92a05b111/'
 
