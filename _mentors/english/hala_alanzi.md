@@ -5,12 +5,15 @@ categories: en
 name: Hala Alanzi
 jobtitle: Aircraft interior Engineer
 workplace: Alsalam Aerospace Industries
-shortbio: ''
+shortbio: I'm the first Saudi female VIP aircraft interior design engineer.
 longbio: ''
 published: true
 image: >-
   https://raw.githubusercontent.com/not-dalia/qudwa/gh-pages/media/15566980166581556698014131_Hala.jpg
-tags: []
+tags:
+  - engineer
+  - design
+  - aircraft
 topics: []
 interests: []
 education-experience: []
