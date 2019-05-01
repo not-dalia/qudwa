@@ -14,6 +14,7 @@ tags: []
 topics: []
 interests: []
 education-experience: []
-social-accounts: {}
+social-accounts:
+  linkedin: 'https://www.linkedin.com/in/hala-alanazi-92a05b111/'
 
 ---
