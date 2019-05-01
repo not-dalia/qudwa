@@ -14,8 +14,13 @@ tags:
   - تصميم داخلي
   - هندسة
   - طائرات
-topics: []
-interests: []
+topics:
+  - اختيار تخصص
+  - تطوير الذات
+interests:
+  - السفر
+  - اليوقا
+  - التصميم
 education-experience:
   - title: بكالوريس في التصميم الداخلي
     place: Rhodec International
