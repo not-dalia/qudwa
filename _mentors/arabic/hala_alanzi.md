@@ -11,7 +11,7 @@ published: true
 image: >-
   https://raw.githubusercontent.com/not-dalia/qudwa/gh-pages/media/15566980166581556698014131_Hala.jpg
 tags:
-  - تصميم
+  - تصميم داخلي
   - هندسة
   - طائرات
 topics: []
@@ -25,6 +25,10 @@ education-experience:
     place: جامعة دار العلوم
     description: ''
     duration: ٢٠١١ - ٢٠١٥
+  - title: مصممة داخلية
+    place: معالم الاركان
+    description: ''
+    duration: ٢٠١٤ - ٢٠١٨
 social-accounts:
   linkedin: 'https://www.linkedin.com/in/hala-alanazi-92a05b111/'
 
