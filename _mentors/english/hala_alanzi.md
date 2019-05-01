@@ -21,6 +21,10 @@ education-experience:
     place: Rhodec International
     description: ''
     duration: 2008 - 2011
+  - title: Bachelor of Architecture - BArch
+    place: Dar Al Uloom University
+    description: ''
+    duration: 2011 - 2015
 social-accounts:
   linkedin: 'https://www.linkedin.com/in/hala-alanazi-92a05b111/'
 
