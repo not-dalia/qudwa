@@ -12,7 +12,7 @@ image: >-
   https://raw.githubusercontent.com/not-dalia/qudwa/gh-pages/media/15566980166581556698014131_Hala.jpg
 tags:
   - engineer
-  - design
+  - interior designer
   - aircraft
 topics: []
 interests: []
@@ -25,6 +25,10 @@ education-experience:
     place: Dar Al Uloom University
     description: ''
     duration: 2011 - 2015
+  - title: Interior Designer
+    place: معالم الاركان
+    description: ''
+    duration: 2014 - 2018
 social-accounts:
   linkedin: 'https://www.linkedin.com/in/hala-alanazi-92a05b111/'
 
