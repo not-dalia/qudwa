@@ -21,6 +21,10 @@ education-experience:
     place: Rhodec International
     description: ''
     duration: ٢٠٠٨ - ٢٠١١
+  - title: بكالوريس في الهندسة المعمارية
+    place: جامعة دار العلوم
+    description: ''
+    duration: ٢٠١١ - ٢٠١٥
 social-accounts:
   linkedin: 'https://www.linkedin.com/in/hala-alanazi-92a05b111/'
 
