@@ -16,7 +16,11 @@ tags:
   - طائرات
 topics: []
 interests: []
-education-experience: []
+education-experience:
+  - title: بكالوريس في التصميم الداخلي
+    place: Rhodec International
+    description: ''
+    duration: ٢٠٠٨ - ٢٠١١
 social-accounts:
   linkedin: 'https://www.linkedin.com/in/hala-alanazi-92a05b111/'
 
