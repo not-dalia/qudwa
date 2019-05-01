@@ -2,9 +2,9 @@
 ref: hala_alanzi
 lang: en
 categories: en
-name: ''
-jobtitle: ''
-workplace: ''
+name: Hala Alanzi
+jobtitle: Aircraft interior Engineer
+workplace: Alsalam Aerospace Industries
 shortbio: ''
 longbio: ''
 published: true
