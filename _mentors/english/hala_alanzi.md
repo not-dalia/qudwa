@@ -16,7 +16,11 @@ tags:
   - aircraft
 topics: []
 interests: []
-education-experience: []
+education-experience:
+  - title: Bachelor's Degree in Interior Design
+    place: Rhodec International
+    description: ''
+    duration: 2008 - 2011
 social-accounts:
   linkedin: 'https://www.linkedin.com/in/hala-alanazi-92a05b111/'
 
