@@ -14,8 +14,13 @@ tags:
   - engineer
   - interior designer
   - aircraft
-topics: []
-interests: []
+topics:
+  - choosing a major
+  - self development
+interests:
+  - travelling
+  - design
+  - yoga
 education-experience:
   - title: Bachelor's Degree in Interior Design
     place: Rhodec International
