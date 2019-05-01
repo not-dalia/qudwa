@@ -11,7 +11,7 @@ published: true
 image: >-
   https://raw.githubusercontent.com/not-dalia/qudwa/gh-pages/media/15566980166581556698014131_Hala.jpg
 tags:
-  - engineer
+  - engineering
   - interior designer
   - aircraft
 topics:
