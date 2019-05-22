@@ -1,5 +1,33 @@
 <!DOCTYPE html>
 <html>
+  <script>
+    var trackerActions = [];
+    function pushAction(action, params){
+        if (typeof tracker != 'undefined'){
+            tracker[action](params);
+        } else {
+            trackerActions.push({action: action, params: params});
+        }
+    }
+    (function(){
+    var s, r, t;
+    r = false;
+    s = document.createElement('script');
+    s.type = 'text/javascript';
+    s.src = 'https://openlab.ncl.ac.uk/dokku/mentoring-editor/javascripts/tracker/tracker.js';
+    s.onload = s.onreadystatechange = function () {
+        if (!r && (!this.readyState || this.readyState == 'complete')) {
+        r = true;
+        while(trackerActions && trackerActions.length > 0){
+            var action = trackerActions.shift();
+            tracker[action.action](action.params);
+        }
+        }
+    };
+    t = document.getElementsByTagName('script')[0];
+    t.parentNode.insertBefore(s, t);
+    }());
+  </script>
   {% include landingHead.html %}
   <body>
     <a href='{{site.baseurl}}/en/'>If this page doesn't redirect within 10 seconds please click here...</a>
