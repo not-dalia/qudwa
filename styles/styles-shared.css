@@ -169,6 +169,7 @@ body {
 #header #language-select a {
     text-decoration: underline;
     transition: all 0.2s ease-in-out;
+    cursor: pointer;
 }
 
 #header #language-select a:hover {
